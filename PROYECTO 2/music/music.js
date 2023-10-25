@@ -25,15 +25,32 @@ const songs = document.createElement("div")
 songs.classList.add("songs")
 contenedorLista.appendChild(songs)
 
+const song = document.createElement("div")
+song.classList.add("song")
+songs.appendChild(song)
+
+const songContainer = document.createElement("div")
+songContainer.classList.add("songContainer")
+song.appendChild(songContainer)
+
+
 
 function render(lista){
-const image = document.createElement("img")
-image.src = lista.imagen
-songs.appendChild(image)
+    
+    const image = document.createElement("img")
+    image.src = lista.imagen
+    image.href = 
+    image.classList.add("songContainer")
+    songContainer.appendChild(image)
+    
+
     const titulo = document.createElement("a")
     titulo.innerText = lista.titulo
     titulo.classList.add("song__Title--text")
-    songs.appendChild(titulo)
+    songContainer.appendChild(titulo)
+
+    const artista = document.createElement("a")
+    artista.innerText = lista.artista
 
     console.log(lista)
 }
