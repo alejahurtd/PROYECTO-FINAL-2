@@ -11,7 +11,25 @@
   </head>
  
   <body>
-<div id="contenedor"></div>
+    <section class="leftColumn">
+      <div class="leftColumn__tex">
+        <a class="leftColumn__tex--nonedecoration" href="./music.html">Music</a>
+        <a class="leftColumn__tex--nonedecoration" href="LikedSongs.html">Liked songs</a>
+      </div>
+      <img src="../Landing/imagenes/logo.png" class="spotifyLogo" />
+    </section>
+ <!-- Columna derecha -->
+    <section class="content">
+ <!-- Buscador y perfil-->    
+      <section class="searchAndUser">
+        <div class="searchAndUser__searchIcon">
+          <img src="./icon _search_.png" class="searchAndUser__searchIcon--icon" />
+        </div>
+        <input type="text" placeholder="What do you want to listen?" class="searchAndUser__searchBar" />
+        <a href="./Profile.html"><img src="./icon profile.png" alt="" class="searchAndUser__userIcon" /></a>
+      </section>
+     <!--Cuadro negro grande que contine la lista de canciones-->
+<section id="contenedorLista"></section>
    </body>
    <footer>
     <script type="module" src="./music.js"></script>

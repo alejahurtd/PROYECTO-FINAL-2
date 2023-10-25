@@ -13,14 +13,29 @@ async function getText(playlist){
     }
     
 }
-const contenedorLista= document.getElementById("contenedor")
+const contenedorLista= document.getElementById("contenedorLista")
+contenedorLista.classList.add("songs__Content")
+
+const songTitle= document.createElement("p")
+songTitle.innerText="Songs"
+songTitle.classList.add("songs__Title")
+contenedorLista.appendChild(songTitle)
+
+const songs = document.createElement("div")
+songs.classList.add("songs")
+contenedorLista.appendChild(songs)
+
 
 function render(lista){
-    console.log(lista)
-    const titulo = document.createElement("h1")
+const image = document.createElement("img")
+image.src = lista.imagen
+songs.appendChild(image)
+    const titulo = document.createElement("a")
     titulo.innerText = lista.titulo
     titulo.classList.add("song__Title--text")
-    contenedorLista.appendChild(titulo)
+    songs.appendChild(titulo)
+
+    console.log(lista)
 }
 
 
