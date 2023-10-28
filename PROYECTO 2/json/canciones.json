@@ -7,7 +7,8 @@
             "album": "Niegame Tres Veces",
             "año": "2014",
             "duracion": "4:20",
-            "letra": ""
+            "letra": "",
+            "href":""
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 2.png",
@@ -16,71 +17,98 @@
             "album": "Algo Que Se Quede",
             "año": "2020",
             "duracion": "4:20",
-            "letra": ""
+            "letra": "",
+            "href":""
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 3.png",
-            "titulo": "Hello",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
-            "letra": ""
+            "titulo": "Happier Than Ever",
+            "artista":"Billie Eilish",
+            "album": "Happier Than Ever",
+            "año": "2021",
+            "duracion": "4:57",
+            "letra": "",
+            "href":""
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 4.png",
-            "titulo": "Salsa",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
-            "letra": ""
+            "titulo": "Someone Like You",
+            "artista":"Adele",
+            "album": "21",
+            "año": "2011",
+            "duracion": "4:45",
+            "letra": "",
+            "href":""
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 5.png",
-            "titulo": "Vallenato",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
-            "letra": ""
+            "titulo": "Crazy In Love (feat. Jay-Z)",
+            "artista":"Beyoncé, Jay-z",
+            "album": "Dangerously In Love",
+            "año": "2003",
+            "duracion": "3:56",
+            "letra": "",
+            "href":""
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 6.png",
-            "titulo": "Merengue",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
-            "letra": ""
+            "titulo": "Como Te Hago Entender",
+            "artista":"Roberto Roena",
+            "album": "Los Rostros de la Salsa",
+            "año": "2017",
+            "duracion": "5:44",
+            "letra":"",
+            "href":""
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 7.png",
-            "titulo": "",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
-            "letra": ""
+            "titulo": "Man Down",
+            "artista":"Rihanna",
+            "album": "Loud",
+            "año": "2010",
+            "duracion": "4:27",
+            "letra": "",
+            "href":""
         },
        {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 8.png",
-            "titulo": "",
+            "titulo": "Hello",
             "artista":"Adele",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
-            "letra":""
+            "album": "25",
+            "año": "2015",
+            "duracion": "4:55",
+            "letra":"",
+            "href":""
             
         },
        {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 9.png",
-            "titulo": "",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
-            "letra": ""
+            "titulo": "S91",
+            "artista":"KAROL G",
+            "album": "Single",
+            "duracion": "2:52",
+            "letra": "",
+            "href":""
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
+            "titulo": "Diamonds",
+            "artista":"Rihanna",
+            "album": "Single",
+            "año": "2019",
+            "duracion": "3:45",
+            "letra": "",
+            "href":""
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
+            "titulo": "Diamonds",
+            "artista":"Rihanna",
+            "album": "Single",
+            "año": "2019",
+            "duracion": "3:45",
+            "letra": "",
+            "href":""
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
@@ -89,7 +117,38 @@
             "album": "Algo Que Se Queda",
             "año": "",
             "duracion": "",
-            "letra": ""
+            "letra": "",
+            "href":""
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
+            "titulo": "",
+            "artista":"Grupo Niche",
+            "album": "Algo Que Se Queda",
+            "año": "",
+            "duracion": "",
+            "letra": "",
+            "href":""
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
+            "titulo": "",
+            "artista":"Grupo Niche",
+            "album": "Algo Que Se Queda",
+            "año": "",
+            "duracion": "",
+            "letra": "",
+            "href":""
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
+            "titulo": "",
+            "artista":"Grupo Niche",
+            "album": "Algo Que Se Queda",
+            "año": "",
+            "duracion": "",
+            "letra": "",
+            "href":""
         }
     
     ]
