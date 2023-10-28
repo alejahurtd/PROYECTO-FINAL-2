@@ -35,6 +35,7 @@ song.appendChild(songContainer)
 
 
 
+
 function render(lista){
     
     const image = document.createElement("img")
@@ -42,15 +43,17 @@ function render(lista){
     image.href = 
     image.classList.add("songContainer")
     songContainer.appendChild(image)
-    
 
+    const artista = document.createElement("a")
+    artista.innerText = lista.artista
+    artista.classList.add("song__singer")
+    songContainer.appendChild(artista)
+
+    
     const titulo = document.createElement("a")
     titulo.innerText = lista.titulo
     titulo.classList.add("song__Title--text")
     songContainer.appendChild(titulo)
-
-    const artista = document.createElement("a")
-    artista.innerText = lista.artista
 
     console.log(lista)
 }

@@ -165,5 +165,6 @@
   
   .songContainer {
     display: flex;
+    flex-direction: column;
   }
   
