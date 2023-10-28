@@ -7,8 +7,6 @@ async function getText(playlist){
     lista= await myObject.json();
 
     for(let i=0; i<lista.playlist.length;i++){
-        //console.log(lista.playlist[i].titulo)
-        //console.log(lista.playlist[i].artista)
         render(lista.playlist[i])
     }
     
@@ -57,7 +55,6 @@ function render(lista){
 
     console.log(lista)
 }
-
 
 
 getText(playlist)
