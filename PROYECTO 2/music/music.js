@@ -12,9 +12,9 @@ async function getText(playlist){
     
     lista.playlist.forEach(element => {
 
-        if(element.like){
+        
             renderSong(element)
-        }
+    
     });
 }
 const contenedorLista= document.getElementById("contenedorLista")
