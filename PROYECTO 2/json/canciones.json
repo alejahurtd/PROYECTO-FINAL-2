@@ -70,7 +70,8 @@
             "album": "Algo Que Se Queda",
             "año": "",
             "duracion": "",
-            "letra": ""
+            "letra": "",
+            "like": true
         },
        {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 9.png",
