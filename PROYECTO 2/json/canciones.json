@@ -8,7 +8,8 @@
             "año": "2014",
             "duracion": "4:20",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":true
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 2.png",
@@ -18,7 +19,8 @@
             "año": "2020",
             "duracion": "4:20",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":false
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 3.png",
@@ -28,7 +30,8 @@
             "año": "2021",
             "duracion": "4:57",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":true
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 4.png",
@@ -38,7 +41,8 @@
             "año": "2011",
             "duracion": "4:45",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":false
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 5.png",
@@ -48,7 +52,8 @@
             "año": "2003",
             "duracion": "3:56",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":false
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 6.png",
@@ -58,7 +63,8 @@
             "año": "2017",
             "duracion": "5:44",
             "letra":"",
-            "href":""
+            "href":"",
+            "liked":true
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 7.png",
@@ -68,7 +74,8 @@
             "año": "2010",
             "duracion": "4:27",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":false
         },
        {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 8.png",
@@ -78,7 +85,8 @@
             "año": "2015",
             "duracion": "4:55",
             "letra":"",
-            "href":""
+            "href":"",
+            "liked":true
             
         },
        {
@@ -88,7 +96,8 @@
             "album": "Single",
             "duracion": "2:52",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":true
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
@@ -98,57 +107,63 @@
             "año": "2019",
             "duracion": "3:45",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":true
         },
         {
-            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
-            "titulo": "Diamonds",
-            "artista":"Rihanna",
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 11.png",
+            "titulo": "El Retén-Remix",
+            "artista":"Criss & Ronny, Koffe el Kafetero, Zaider",
             "album": "Single",
             "año": "2019",
-            "duracion": "3:45",
+            "duracion": "3:55",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":false
         },
         {
-            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
-            "titulo": "",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 12.png",
+            "titulo": "Coco Channel",
+            "artista":"Eladio Carrion, Bad Bunny",
+            "album": "3MEN2 KBRN",
+            "año": "2023",
+            "duracion": "3:27",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":true
         },
         {
-            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
-            "titulo": "",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 13.png",
+            "titulo": "Dangerous",
+            "artista":"Madison Beer",
+            "album": "Silence Between Songs",
+            "año": "2023",
+            "duracion": "3:47",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":false
         },
         {
-            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
-            "titulo": "",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 14.png",
+            "titulo": "ODEE",
+            "artista":"BLK ODYSSY",
+            "album": "DIAMONDS & FREAKS",
+            "año": "2023",
             "duracion": "",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":true
         },
         {
-            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
-            "titulo": "",
-            "artista":"Grupo Niche",
-            "album": "Algo Que Se Queda",
-            "año": "",
-            "duracion": "",
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 15.png",
+            "titulo": "GENTO",
+            "artista":"SB19",
+            "album": "Single",
+            "año": "2023",
+            "duracion": "3:52",
             "letra": "",
-            "href":""
+            "href":"",
+            "liked":true
         }
     
     ]

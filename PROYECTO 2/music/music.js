@@ -1,5 +1,5 @@
 
-const playlist= "../json/canciones.json"
+const playlist= "../Json/canciones.json"
 let lista
 
 async function getText(playlist){
