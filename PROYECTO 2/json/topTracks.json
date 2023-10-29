@@ -1,0 +1,121 @@
+{ 
+    "topTracks":[
+      
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 2.png",
+            "titulo": " Algo Que Se Quede",
+            "artista":"Grupo Niche",
+            "album": "Algo Que Se Quede",
+            "año": "2020",
+            "duracion": "4:20",
+            "letra": "",
+            "href":"",
+            "heart":"../assets/heart empty.png",
+            "liked":false
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 3.png",
+            "titulo": "Happier Than Ever",
+            "artista":"Billie Eilish",
+            "album": "Happier Than Ever",
+            "año": "2021",
+            "duracion": "4:57",
+            "letra": "",
+            "href":"",
+            "heart":"../assets/heart.png",
+            "liked":true
+        },
+      
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 5.png",
+            "titulo": "Crazy In Love (feat. Jay-Z)",
+            "artista":"Beyoncé, Jay-z",
+            "album": "Dangerously In Love",
+            "año": "2003",
+            "duracion": "3:56",
+            "letra": "",
+            "href":"",
+            "heart":"../assets/heart empty.png",
+            "liked":false
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 6.png",
+            "titulo": "Como Te Hago Entender",
+            "artista":"Roberto Roena",
+            "album": "Los Rostros de la Salsa",
+            "año": "2017",
+            "duracion": "5:44",
+            "letra":"",
+            "href":"",
+            "heart":"../assets/heart.png",
+            "liked":true
+        },
+     
+       {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 8.png",
+            "titulo": "Hello",
+            "artista":"Adele",
+            "album": "25",
+            "año": "2015",
+            "duracion": "4:55",
+            "letra":"",
+            "href":"",
+            "heart":"../assets/heart.png",
+            "liked":true
+            
+        },
+      
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
+            "titulo": "Diamonds",
+            "artista":"Rihanna",
+            "album": "Single",
+            "año": "2019",
+            "duracion": "3:45",
+            "letra": "",
+            "href":"",
+            "heart":"../assets/heart.png",
+            "liked":true
+        },
+ 
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 12.png",
+            "titulo": "Coco Channel",
+            "artista":"Eladio Carrion, Bad Bunny",
+            "album": "3MEN2 KBRN",
+            "año": "2023",
+            "duracion": "3:27",
+            "letra": "",
+            "href":"",
+            "heart":"../assets/heart.png",
+            "liked":true
+        },
+      
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 14.png",
+            "titulo": "ODEE",
+            "artista":"BLK ODYSSY",
+            "album": "DIAMONDS & FREAKS",
+            "año": "2023",
+            "duracion": "3:26",
+            "letra": "",
+            "href":"",
+            "heart":"../assets/heart.png",
+            "liked":true
+        },
+        {
+            "imagen": "../Landing/imagenes/Pictures songs/cancion 15.png",
+            "titulo": "GENTO",
+            "artista":"SB19",
+            "album": "Single",
+            "año": "2023",
+            "duracion": "3:52",
+            "letra": "",
+            "href":"",
+            "heart":"../assets/heart.png",
+            "liked":true
+        }
+    
+    ]
+
+}

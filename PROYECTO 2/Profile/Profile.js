@@ -28,103 +28,103 @@ imgLogo.src = '../Landing/imagenes/logo.png';
 imgLogo.classList.add("spotifyLogo");
 leftColumn.appendChild(imgLogo);
 
-// Columna derecha
+//columna derecha engloba todo 
+const container = document.createElement('section');
+container.classList.add('container');
+document.body.appendChild(container);
 
-const content = document.createElement('section');
-content.classList.add('content');
-document.body.appendChild(content);
+// cabezote de profile
+const headerProfile = document.createElement('section');
+headerProfile.classList.add('headerProfile');
+container.appendChild(headerProfile);
 
-// Creación de sección de buscador y usuario
-const searchAndUser = document.createElement('section');
-searchAndUser.classList.add('searchAndUser');
-content.appendChild(searchAndUser);
+// barra búsqueda
+const searchBarInput = document.createElement('input');
+searchBarInput.type = 'text';
+searchBarInput.classList.add('headerProfile__searchbar');
+searchBarInput.placeholder = 'Search';
+headerProfile.appendChild(searchBarInput);
 
-// Contenedor para el campo de búsqueda
-const searchContainer = document.createElement('div');
-searchContainer.classList.add('searchAndUser__searchContainer');
-searchAndUser.appendChild(searchContainer);
+// Contenedor de información del perfil
+const userInfo = document.createElement('div');
+userInfo.classList.add('headerProfile__userInfo');
+headerProfile.appendChild(userInfo);
 
-// Campo de búsqueda
-const searchInput = document.createElement('input');
-searchInput.classList.add('searchAndUser__search');
-searchInput.placeholder = 'Search';
-searchInput.type = 'text';
-searchContainer.appendChild(searchInput);
+// Imagen del perfil
+const profilePic = document.createElement('img');
+profilePic.src = '../assets/profile green.png';
+profilePic.alt = '';
+profilePic.classList.add('headerProfile__profilePic');
+userInfo.appendChild(profilePic);
 
-// Enlace a la página de perfil con el icono del usuario
-const userProfileLink = document.createElement('a');
-userProfileLink.href = './Profile.html';
-searchAndUser.appendChild(userProfileLink);
+// Contenedor para el texto del perfil
+const profileText = document.createElement('div');
+profileText.classList.add('headerProfile__profileText');
+userInfo.appendChild(profileText);
 
-const userIconImg = document.createElement('img');
-userIconImg.src = '../assets/icon profile.png';
-userIconImg.alt = '';
-userIconImg.classList.add('searchAndUser__userIcon');
-userProfileLink.appendChild(userIconImg);
-
-// titulos de canciones para ti, username, etc.
-
-const contentTitles = document.createElement('section');
-contentTitles.classList.add('contentTitle');
-content.appendChild(contentTitles)
-
-// titulo Songs you like
-const songsYouLiked = document.createElement('div');
-songsYouLiked.classList.add('mainTitle');
-songsYouLiked.textContent = 'Songs You Like';
-contentTitles.appendChild(songsYouLiked);
-
-//subtitulo List
-const list = document.createElement('div');
-list.classList.add('listName');
-list.textContent = 'List';
-contentTitles.appendChild(list);
+// Elementos de texto del perfil
+//titulo profile
+const profileTitle = document.createElement('div');
+profileTitle.classList.add('headerProfile__profileTitle');
+profileTitle.textContent = 'Profile';
+profileText.appendChild(profileTitle);
 
 //subtitulo username
 const username = document.createElement('div');
-username.classList.add('username');
+username.classList.add('headerProfile__username');
 username.textContent = 'Username';
-contentTitles.appendChild(username);
+profileText.appendChild(username);
 
+//informacion del usuario
+const profileMusicInfo = document.createElement('div');
+profileMusicInfo.classList.add('headerProfile__profileMusicInfo');
+profileMusicInfo.textContent = '0 Public PlayList - 0 Followers - 0 Following';
+profileText.appendChild(profileMusicInfo);
+
+// cuadro negro grande que contiene nombre de la lista, subtitulos y canciones
+const content = document.createElement('section');
+content.classList.add('content');
+container.appendChild(content)
+
+// Nombre playlist
+const topTracks = document.createElement('div');
+topTracks.classList.add('topTracks');
+topTracks.textContent = 'Top tracks this month';
+content.appendChild(topTracks);
+
+//subtitulo playlist
+const OnlyVisibleToYou = document.createElement('div');
+OnlyVisibleToYou.classList.add('visible');
+OnlyVisibleToYou.textContent = 'Only visible to you';
+content.appendChild(OnlyVisibleToYou);
+
+//COMIENZA EL CONTENEDOR DE LAS CANCIONES
+const songsContainer = document.getElementById("contenedorLista");
+songsContainer.classList.add('songsContainer');
+content.appendChild(songsContainer);
 
 //estamos llamando como una constante nuestro JSON
-const playlist= "../Json/canciones.json"
-let lista
+const topTracksPlaylist= "../Json/topTracks.json"
+let listaTopTracks
 
-async function getText(playlist){
-    let myObject= await fetch(playlist);
-    lista= await myObject.json();
+async function getText(topTracksPlaylist){
+    let myObject= await fetch(topTracksPlaylist);
+    listaTopTracks= await myObject.json();
     
 //para que pase por cada uno de los elementos del objeto    
-    lista.playlist.forEach(element => {   
-        if(element.liked){
-            
-            renderSong(element)
-        }
+    listaTopTracks.topTracks.forEach(element => {   
+        renderSong(element)
     });
 }
 
-//Cuadro negro grande que contine la lista de canciones
-const contenedorLista= document.getElementById("contenedorLista")
-contenedorLista.classList.add("songs__Content")
-content.appendChild(contenedorLista)
+//Cuadro negro grande que contine laista de canciones
 
-//Titulo SONG de la lista
-const songTitle= document.createElement("p")
-songTitle.innerText="Songs"
-songTitle.classList.add("songs__Title")
-contenedorLista.appendChild(songTitle)
-
-//Cuadro negro pequeño que hace scroll
-const songs = document.createElement("div")
-songs.classList.add("songs")
-contenedorLista.appendChild(songs)
 
 function renderSong (element) {
     //lista de canciones
     const song = document.createElement("div")
     song.classList.add("song")
-    songs.appendChild(song)
+    songsContainer.appendChild(song)
 
     //contenedor de info canciones
     const songContainer = document.createElement("div")
@@ -163,7 +163,7 @@ function renderSong (element) {
 
 // contenedor de favoritos y tiempo de duracion de la cancion
     const songFavContainer = document.createElement('div')
-    songFavContainer.classList.add('song__Fav--Container')
+    songFavContainer.classList.add('songFav__Container')
     song.appendChild(songFavContainer)
 
     const favImg = document.createElement('img')
@@ -177,12 +177,7 @@ function renderSong (element) {
     songFavContainer.appendChild(time)
 }
 
-getText(playlist)
-
-
-
-
-
+getText(topTracksPlaylist)
 
 
 
