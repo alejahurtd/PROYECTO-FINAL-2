@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: flex;
+  height: 110vh;
+  background-color: rgb(41, 65, 171);
+}
+
+.leftColumn {
+  background-color: #000;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftColumn__tex {
+  height: 75%;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.leftColumn__tex--nonedecoration {
+  text-decoration: none;
+  color: #fff;
+}
+
+.spotifyLogo {
+  width: 60%;
+}
+
+.content {
+  width: 75%;
+}
+
+.searchAndUser {
+  margin-top: 2.5rem;
+  display: flex;
+  margin-left: 6.25rem;
+  justify-content: end;
+}
+
+.searchAndUser__userIcon {
+  height: 50px;
+  padding-inline: 4.375rem;
+}
+
+.searchAndUser__searchContainer {
+  display: flex;
+  align-items: center;
+}
+/* esto es lo que le da el estilo al search */
+.searchAndUser__search {
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 400px;
+  text-align: end;
+  background-color: #ffffff00;
+  border: none;
+}
+
+.searchAndUser__search:focus {
+  outline: none;
+}
+
+.searchAndUser__search::placeholder {
+  color: #fff;
+}
+
+.contentTitle {
+  margin-inline: 5.625rem;
+}
+
+.mainTitle {
+  font-size: 1.875rem;
+  color: white;
+  font-weight: bold;
+}
+
+.listName {
+  color: #1ed760;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.username {
+  color: #d9dadc;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.songs__Content {
+  height: 50%;
+  background-color: #121212;
+  border-radius: 10px;
+  margin-block: 3.125rem;
+  margin-inline: 5.625rem;
+  padding-top: 3.75rem;
+}
+
+.songs {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  color: #fff;
+  overflow-y: scroll;
+}
+.songs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.songs::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+.songs::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+}
+
+.songs::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}
+
+.song {
+  display: flex;
+  padding-inline: 4.375rem;
+  height: 5.625rem;
+  justify-content: space-between;
+}
+
+.song__Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 0.7rem;
+}
+
+.song__Title {
+  font-weight: bold;
+  font-size: 1.5625rem;
+}
+.song__Title--text {
+  text-decoration: none;
+  color: #fff;
+}
+
+.song__singer {
+  font-size: 0.9375rem;
+}
+.song__Time {
+  font-size: 0.9375rem;
+}
+
+.song__Fav {
+  height: 35%;
+}
+
+.song__Fav--Container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.songContainer {
+  display: flex;
+}
