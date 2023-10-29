@@ -11,14 +11,14 @@ leftColumn.appendChild(leftColumnText);
 // Redirección a la página de Music
 const linkMusicPage = document.createElement('a');
 linkMusicPage.classList.add("leftColumn__tex--nonedecoration");
-linkMusicPage.href = './music.html';
+linkMusicPage.href = '../Music/music.html';
 linkMusicPage.textContent = 'Music';
 leftColumnText.appendChild(linkMusicPage);
 
 // Redirección a la página de Liked songs
 const linkLikedSongsPage = document.createElement('a');
 linkLikedSongsPage.classList.add("leftColumn__tex--nonedecoration");
-linkLikedSongsPage.href = 'LikedSongs.html';
+linkLikedSongsPage.href = '../Liked songs/LikedSongs.html';
 linkLikedSongsPage.textContent = 'Liked songs';
 leftColumnText.appendChild(linkLikedSongsPage);
 
@@ -55,7 +55,7 @@ searchBarInput.classList.add('searchAndUser__searchBar');
 searchAndUser.appendChild(searchBarInput);
 
 const userProfileLink = document.createElement('a');
-userProfileLink.href = './Profile.html';
+userProfileLink.href = '../Profile/Profile.html';
 searchAndUser.appendChild(userProfileLink);
 
 
