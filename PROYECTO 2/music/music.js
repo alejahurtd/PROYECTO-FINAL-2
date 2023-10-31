@@ -173,4 +173,5 @@ function lyrics(id) {
         window.location.href = './lyrics.html?id=' + cancion.id
     }
 
+    
 }
