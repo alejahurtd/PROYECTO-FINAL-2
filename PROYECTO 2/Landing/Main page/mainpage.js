@@ -69,6 +69,7 @@ function renderCarrusel (element) {
   image.classList.add(element.class)
   const imagenCarrusel =document.createElement ("img")
   imagenCarrusel.src= element.src
+  
 
   image.appendChild(imagenCarrusel)
   contenedor.appendChild(image)
