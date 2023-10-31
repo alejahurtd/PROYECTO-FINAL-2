@@ -28,14 +28,14 @@ nav.appendChild(menuText);
 ///Who we are
 const whoWeAre = document.createElement('a');
 whoWeAre.classList.add('menu__text'); 
-whoWeAre.href = '../who we are/Who We Are.html';
+whoWeAre.href = './Who we are.html';
 whoWeAre.textContent = 'Who we are';
 menuText.appendChild(whoWeAre);
 
 ///Sign up
 const signUpLink = document.createElement('a');
 signUpLink.classList = ('menu__text');
-signUpLink.href = './SignUp.html';
+signUpLink.href = './singUp.html';
 signUpLink.textContent = 'Sign Up';
 menuText.appendChild(signUpLink);
 
