@@ -21,7 +21,7 @@ body {
 
 .leftColumn__tex {
   height: 75%;
-  font-size: 25px;
+  font-size: 1.5625rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ body {
   border: none;
   color: #fff;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.9375rem;
   text-align: end;
   margin-right: 3rem;
   margin-top: 1.5rem;
@@ -69,7 +69,7 @@ body {
 
 .headerProfile__userInfo {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   width: 100%;
   margin-bottom: 2rem;
 }
@@ -88,19 +88,19 @@ body {
 .headerProfile__profileTitle {
   color: #1ed760;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .headerProfile__username {
   color: #fff;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .headerProfile__profileMusicInfo {
   color: #dcdcdc;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .content {
@@ -112,7 +112,7 @@ body {
 }
 
 .topTracks {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #fff;
   font-weight: bold;
 }
@@ -120,7 +120,7 @@ body {
 .visible {
   color: #dcdcdc;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 2,5rem;
   padding-top: 0.5rem;
 }
 
@@ -171,7 +171,7 @@ body {
 
 .song__Title {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.56rem;
 }
 
 .song__Title--text {
@@ -180,11 +180,11 @@ body {
 }
 
 .song__singer {
-  font-size: 15px;
+  font-size: 0.93rem;
 }
 .song__Time {
   color: #fff;
-  font-size: 15px;
+  font-size: 0.93rem;
 }
 
 .song__Fav {
@@ -196,7 +196,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: end;
-  gap: 80px;
+  gap: 5rem;
 }
 
 .song__Image {
