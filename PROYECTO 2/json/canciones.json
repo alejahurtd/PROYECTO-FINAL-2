@@ -1,201 +1,198 @@
-{ 
-    "playlist":[
+{
+    "playlist": [
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 1.png",
             "titulo": "Niegame Tres Veces",
-            "artista":"Silvestre Dángon",
+            "artista": "Silvestre Dángon",
             "album": "Niegame Tres Veces",
             "año": "2014",
             "duracion": "4:20",
             "letra": "Si alguien pregunta por mí, niega Que tú no sabes de mí, dilo Que se acabó este cariño Lo hermoso y lo lindo que había entre los dos Me duele mucho que tú digas De qué planeta soy yo, habla Que se acabó este partido Que notiempo extra, que el juez ya pitó Y dile a todo el mundo que no sabes nada Que soy un panal que nunca tuvo miel Dile a todo el mundo que cuando te amaba Salían de mi boca besitos de hiel Que si alguna vez tú sales embarazada Es por obra y gracia del ángel Gabriel Ay, si me niegas tres veces antes que el gallo cante en la madruga Así niegas a Cristo y te lavas las manos como si na' Quien se niega a sí mismo y reniega de tanta felicidad No se quiere a sí mismo y se atreve a negar hasta su mamá Si niega que uno y uno suman dos Te atreves a negar que existe Dios ¿Cómo vas a negar que te besé Si en tu rostro mi nombre se te ve?",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":1
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 1
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 2.png",
             "titulo": " Algo Que Se Quede",
-            "artista":"Grupo Niche",
+            "artista": "Grupo Niche",
             "album": "Algo Que Se Quede",
             "año": "2020",
             "duracion": "4:20",
-            "letra": "Tú me dices que me amas con el alma Y que todas las noches sueñas conmigo Tú me entregas el abrazo que me gana Y me das los besos que viajan conmigo. Yo te veo tan hermosa y tan callada Tan tímida que sonrojas si te miro Y no sabes lo qué pasa en mi cabeza Escucha por favor lo que te digo",
-            "href":"",
-            "heart":"../assets/heart empty.png",
-            "liked":false,
-            "id":2
+            "letra": "Tú me dices que me amas con el alma <br/> Y que todas las noches sueñas conmigo<br/>Tú me entregas el abrazo que me gano<br/>Y me das los besos que viajan conmigo.<br/><br> Yo te veo, tan hermosa y tan callada<br/>Tan tímida, te sonrojas si te miro<br/>Y no sabes lo que pasa en mi cabeza<br/>Escucha, por favor, lo que digo.<br/><br>Yo quiero algo que se quede para siempre<br/>Algo que solo se da una vez en la vida<br/>Quiero dejar la huella de este amor, amor, amor del bueno<br/>Si me dejas, te lo pido de rodillas.<br/><br>Déjame entrar en tu jardín, dame la llave del tu sol<br/>Quiero mostrarte los colores del amor<br/>Quiero que sientas cómo es llegar al cielo<br/>Si me das eso que anhelo, te lo juro no te vas a arrepentir.<br/><br>Comencemos por bailar bien suavecito<br/>Quiero decirte cuánto te amo al oído<br/>Deja atrás los prejuicios y los miedos<br/>Toma mis alas, ven y vuélate conmigo.<br/><br>Yo quiero algo que se quede para siempre<br/>Algo que solo se da una vez en la vida<br/>Quiero dejar la huella de este amor, amor, amor del bueno<br/>Si me dejas, te lo pido de rodillas.<br/><br>Déjame entrar en tu jardín, dame la llave del tu sol<br/>Quiero mostrarte los colores del amor<br/>Quiero que sientas cómo es llegar al cielo<br/>Si me das eso que anhelo, te lo juro no te vas a arrepentir.<br/><br>Yo quiero hacer arte en tu cuerpo y tus sentidos<br/>Dibujarme en ti, tatuarme en ti, mi nena linda<br/>Dame la oportunidad de plasmar en fino lienzo.<br/><br>Lo más bello de este amor<br/>Pa' que me lleves contigo, mi niña<br/>Yo quiero hacer arte en tu cuerpo y tus sentidos<br/>Dibujarme en ti tatuarme en ti, mi nena linda.<br/><br>Mmh, para enseñarte a volar<br/>Descubrir el cielo y sus colores<br/>Tú y yo, pondremos el vals de las flores.<br/><br>Yo quiero hacer arte en tu cuerpo y tus sentidos<br/>Dibujarme en ti, tatuarme en ti, mi nena linda<br/>Quiero dejar la huella de este amor, amor, amor del bueno<br/>Si me dejas, te lo pido de rodillas.<br/><br>Déjame entrar en tu jardín, dame la llave del tu sol<br/>Quiero mostrarte los colores del amor<br/>Quiero que sientas cómo es llegar al cielo<br/>Si me das eso que anhelo, te lo juro no te vas a arrepentir.",
+            "href": "",
+            "heart": "../assets/heart empty.png",
+            "liked": false,
+            "id": 2
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 3.png",
             "titulo": "Happier Than Ever",
-            "artista":"Billie Eilish",
+            "artista": "Billie Eilish",
             "album": "Happier Than Ever",
             "año": "2021",
             "duracion": "4:57",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":3
+            "letra": "When I'm away from you, I'm happier than ever<br/> Wish I could explain it better<br/> I wish it wasn't true<br/> Give me a day or two to think of something clever<br/> <br> To write myself a letter<br/> To tell me what to do, mm-mmm<br/>Do you read my interviews?<br/> Or do you skip my avenue? (My avenue)<br/> <br> When you (when you) said you were passing through<br/> Was I even on your way?<br/>I knew when I asked you to (when I asked you to)<br/>Be cool about what I was telling you<br/> <br> You'd do the opposite of what you said you'd do <br/>(what you said you'd do)<br/>And I'd end up more afraid<br/>Don't say it isn't fair<br/><br>You clearly weren't aware that you made me miserable<br/>So if you really wanna know<br/>When I'm away from you (when I'm away from you)<br/>I'm happier than ever (happier than ever)<br/><br>'Cause you only listen to your fucking friends<br/>I don't relate to you<br/>I don't relate to you, no<br/>'Cause I'd never treat me this shitty<br/>You made me hate this city<br/><br>And I don't talk shit about you on the internet<br/>Never told anyone anything bad<br/>'Cause that shit's embarrassing, you were my everything<br/>And all that you did was make me fucking sad<br/><br>So don't waste the time I don't have<br/>And don't try to make me feel bad<br/>I could talk about every time that you showed up on time<br/>But I'd have an empty line 'cause you never did<br/><br>Never paid any mind to my mother or friends<br/>So I shut 'em all out for you 'cause I was a kid<br/>You ruined everything good<br/>Always said you were misunderstood<br/>Made all my moments your own<br/>Just fucking leave me alone<br/>",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 3
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 4.png",
             "titulo": "Someone Like You",
-            "artista":"Adele",
+            "artista": "Adele",
             "album": "21",
             "año": "2011",
             "duracion": "4:45",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart empty.png",
-            "liked":false,
-            "id":4
+            "letra": "I heard that you're settled down <br /> That you found a girl and you're married now<br /> I heard that your dreams came true<br /> Guess she gave you things I didn't give to you<br />   <br>  Old friend, why are you so shy?<br /> Ain't like you to hold back or hide from the light<br /> I hate to turn up out of the blue, uninvited<br /> But I couldn't stay away, I couldn't fight it<br />   <br>   I had hoped you'd see my face<br /> And that you'd be reminded that for me, <br /> it isn't over<br /> Never mind, I'll find someone like you<br />  <br>  I wish nothing but the best for you, too<br /> Don't forget me, I beg<br /> I'll remember, you said<br /> Sometimes it lasts in love,<br />  <br>  but sometimes it hurts instead<br /> Sometimes it lasts in love, <br /> but sometimes it hurts instead<br /> You know how the time flies<br />  <br>  Only yesterday was the time of our lives<br /> We were born and raised in a summer haze<br /> Bound by the surprise of our glory days<br /> I hate to turn up out of the blue, uninvited<br />  <br>  But I couldn't stay away, I couldn't fight it<br /> I had hoped you'd see my face<br /> And that you'd be reminded that for me, <br />it isn't over<br />  <br>  Never mind, I'll find someone like you<br /> I wish nothing but the best for you, too<br /> Don't forget me, I beg<br /> I'll remember, you said<br />  <br>  Sometimes it lasts in love, <br /> but sometimes it hurts instead<br /> Nothing compares, no worries or cares<br /> Regrets and mistakes, they're memories made<br /> <br>",
+            "href": "",
+            "heart": "../assets/heart empty.png",
+            "liked": false,
+            "id": 4
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 5.png",
             "titulo": "Crazy In Love (feat. Jay-Z)",
-            "artista":"Beyoncé, Jay-z",
+            "artista": "Beyoncé, Jay-z",
             "album": "Dangerously In Love",
             "año": "2003",
             "duracion": "3:56",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart empty.png",
-            "liked":false,
-            "id":5
+            "letra": "Yes (woo! Ow!) <br/> It's so crazy right now<br/> Most incredibly, it's ya girl, B.<br/> It's ya boy, Young<br/> You ready?<br/> <br> Uh oh, uh oh, uh oh, oh no no (ow!)<br/> Uh oh, uh oh, uh oh, oh no no<br/> Uh oh, uh oh, uh oh, oh no no<br/> Uh oh, uh oh, uh oh, oh no no<br/> <br> Yeah, history in the making<br/> Part two, so crazy right now<br/> I look and stare so deep in your eyes<br/> I touch on you more and more every time<br/> <br> When you leave I'm begging you not to go<br/> Call your name two, three times in a row<br/> Such a funny thing for me to try to explain<br/> <br> How I'm feeling and my pride is the one to blame (yeah)<br/> 'Cause I know I don't understand<br/> Just how your love can do what no one else can<br/> <br> Got me looking so crazy right now, your love's <br/> got me looking so crazy right now (your love)<br/> Got me looking so crazy right now,your touch <br/> got me looking so crazy right now (your touch)<br/> <br> Got me hoping you'll page me right now, your kiss <br/> got me hoping you'll save me right now<br/> Looking so crazy, your love's got me looking, <br/> got me looking so crazy in love<br/> <br> Uh oh, uh oh, uh oh, oh no no<br/> Uh oh, uh oh, uh oh, oh no no<br/> Uh oh, uh oh, uh oh, oh no no<br/> Uh oh, uh oh, uh oh, oh no no<br/> <br> When I talk to my friends so quietly<br/> Who he think he is? Look at what you did to me<br/> Tennis shoes, don't even need to buy a new dress<br/> If you ain't there ain't nobody else to impress<br/> <br>         ",
+            "href": "",
+            "heart": "../assets/heart empty.png",
+            "liked": false,
+            "id": 5
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 6.png",
             "titulo": "Como Te Hago Entender",
-            "artista":"Roberto Roena",
+            "artista": "Roberto Roena",
             "album": "Los Rostros de la Salsa",
             "año": "2017",
             "duracion": "5:44",
-            "letra":"",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":6
+            "letra": "¿Cómo te hago entender que a nadie extraño más,<br/>  que nada me hace falta más que tu presencia?<br/> Que nada me lastima como lo hace tu ausencia<br/> ¿Cómo te hago entender que a nadie extraño más?<br/> <br> ¿Cómo te hago entender que mi vida sin ti es <br/> solamente tiempo que pasa sin ti?<br/> ¿Cómo te hago entender que me faltas, como el aire, <br/> como el agua para vivir?<br/> <br/> ¿Cómo te hago entender este sabor amargo, <br/> sabor de derrota que crece en mi boca cuando tú no estás?<br/> ¿Cómo te hago entender que se me rompe el alma y no puedo<br/> evitarlo cuando tú te marchas cuando no sé de ti?<br/> <br/> ¿Cómo te hago entender que es más fuerte que yo, <br/> que no quise de ti enamorarme?<br/> ¿Cómo te hago entender que me faltas, como el aire,  como el agua para vivir?<br/> ¿Cómo te hago entender?<br/> <br/> ¿Cómo te hago entender este sabor amargo, <br/> sabor de derrota que crece en mi boca cuando tú no estás?<br/> ¿Cómo te hago entender que se me rompe el alma y <br/> no puedo evitarlo cuando tú te marchas cuando no sé de ti?<br/> <br/> ¿Cómo te hago entender que es más fuerte que yo, <br/> que no quise de ti enamorarme?<br/> ¿Cómo te hago entender que me faltas, como el aire,  como el agua para vivir?<br/> ¿Cómo te hago entender?<br/> <br/> ¿Y qué más puedo hacer para complacerte?<br/> Con todo lo que te digo, no logro convencerte<br/> Te canto esta canción<br/> Quiero saber tu decisión, chica, ¡dilo!<br/> <br/> ¿Cómo te hago entender?<br/> ¿Cómo te hago entender?<br/> Este sabor amargo que crece en mi boca<br/> Ese vicio de ti que no puedo romper<br/> <br/> ¿Cómo te hago entender?<br/> ¿Cómo te hago entender?<br/>Que estoy entregado a ti cuerpo entero<br/>Y no te logro convencer<br/>",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 6
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 7.png",
             "titulo": "Man Down",
-            "artista":"Rihanna",
+            "artista": "Rihanna",
             "album": "Loud",
             "año": "2010",
             "duracion": "4:27",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart empty.png",
-            "liked":false,
-            "id":7
+            "letra": "Sak Pasé <br/> I didn't mean to end his life<br/> I know it wasn't right<br/> I can't even sleep at night<br/> <br> Can't get it off my mind <br/> I need to get out of sight<br/> Before I end up behind bars<br/> What started out as a simple altercation<br/>  <br> Turned into a real sticky situation<br/> Me just thinking on the time that I'm facing<br/> Makes me wanna cry<br/> 'Cause I didn't mean to hurt him<br/> <br> Could've been somebody's son<br/> And I took his heart when<br/> I pulled out that gun<br/> <br> Rum-pum-pum-pum<br/> Rum-pum-pum-pum<br/> Rum-pum-pum-pum<br/> Man down<br/>   <br>   Rum-pum-pum-pum<br/> Rum-pum-pum-pum<br/> Rum-pum-pum-pum<br/> Man down<br/>  <br> Oh, mama, mama, mama<br/> I just shot a man down<br/> In central station<br/> In front of a big old crowd<br/>  <br>  Oh why, oh why?<br/> Oh, mama, mama, mama<br/> I just shot a man down<br/> In central station<br/>  <br>  It's a 22, I call her Peggy Sue<br/>  When she fits right down in my shoes<br/> What do you expect me to do<br/> If you're playin' me for a fool<br/> <br>",
+            "href": "",
+            "heart": "../assets/heart empty.png",
+            "liked": false,
+            "id": 7
         },
-       {
+        {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 8.png",
             "titulo": "Hello",
-            "artista":"Adele",
+            "artista": "Adele",
             "album": "25",
             "año": "2015",
             "duracion": "4:55",
-            "letra":"",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":8
-            
+            "letra": "Hello, it's me<br/> I was wondering if after all these years you'd like to meet<br/> To go over everything<br/> They say that time's supposed to heal ya,<br/> but I ain't done much healing<br/><br> Hello, can you hear me?<br/> I'm in California dreaming about who we used to be<br/> When we were younger and free<br/> I've forgotten how it felt before the world fell at our feet<br/><br> There's such a difference between us<br/>And a million miles<br/> Hello from the other side<br/> I must've called a thousand times<br/> <br> To tell you I'm sorry for everything that I've done<br/> But when I call, you never seem to be home<br/> Hello from the outside<br/> At least I can say that I've tried<br/> <br> To tell you I'm sorry for breaking your heart<br/> Hello, how are you?<br/> It's so typical of me to talk about myself, I'm sorry<br/> <br> I hope that you're well<br/> Did you ever make it out of that town where nothing ever happened?<br/> It's no secret that the both of us<br/> Are running out of time<br/> <br>So hello from the other side (other side)<br/>I must've called a thousand times (thousand times)<br/>But when I call, you never seem to be home<br/> <br> Hello from the outside (outside)<br/> At least I can say that I've tried (I've tried)<br/> To tell you I'm sorry for breaking your heart<br/> But it don't matter, it clearly doesn't tear you apart anymore<br/> <br>(Highs, highs, highs, highs)<br/>Ooh (lows, lows, lows, lows), anymore<br/>(Highs, highs, highs, highs)<br/>Ooh (lows, lows, lows, lows), anymore<br/><br>",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 8
         },
-       {
+        {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 9.png",
             "titulo": "S91",
-            "artista":"KAROL G",
+            "artista": "KAROL G",
             "album": "Single",
             "duracion": "2:52",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":9
+            "letra": " Hice un flow nuevo pa que analice'<br/> Parto cada país que pise<br/> Desde que el avión aterrice<br/>   <br>   Tengo a lo' mío' felice'<br/>Eso e' lo que siempre quise<br/> Yo lo que tengo es aprendices<br/>   <br>  Quieren ser como yo, ya los vi<br/> Pero el flow no está a la venta<br/> Yo lo siento, pero el flow no está a la venta<br/> No, no se vende ni se presta<br/>   <br>   Desde lejos se les ve que quieren ser como yo<br/> Ya los vi, pero el flow no está a la venta<br/> Yo lo siento, pero el flow no está a la venta<br/>No, no se vende ni se presta<br/>   <br>   La G está rompiendo en lo que se espera<br/> Y yo sé que a muchos les desespera<br/> De tos los estilos, toas las maneras<br/> Parezco Goku con las siete esferas<br/>   <br>   La paisa llevando la delantera<br/> Dejándola alta, como quiera<br/> Tengo manes peleándose por mí, sí<br/> También las disqueras<br/>   <br>   Y si les duele que la esté rompiendo como se supone, <br/> pues mala mía<br/> Puedo vivir como cuatro vidas sin trabajar, <br/> solo con mis regalía'<br/>   <br>   Tengo gente que no me creía queriendo trabajar en mi compañía<br/> Y mujeres que me dicen que, por mí, <br/> de bando sin miedo se cambiarían<br/>   <br>  La Bichota, la dura, la tipa<br/> Rompe el show cantando hasta con gripa<br/> Llego a España y me dicen: <br/> tía, tú te manda' un flow de la ostia, que flipa<br/> <br>",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 9
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 10.png",
             "titulo": "Diamonds",
-            "artista":"Rihanna",
+            "artista": "Rihanna",
             "album": "Single",
             "año": "2019",
             "duracion": "3:45",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":10
+            "letra": "Shine bright like a diamond <br/> Shine bright like a diamond<br/> <br> Find light in the beautiful sea, I choose to be happy<br/> You and I, you and I, we're like diamonds in the sky<br/> You're a shooting star I see, a vision of ecstasy<br/> When you hold me, I'm alive, we're like diamonds in the sky<br/>  <br>  I knew that we'd become one right away<br/> Oh, right away<br/> At first sight I felt the energy of sun rays<br/> I saw the life inside your eyes<br/> <br> So shine bright, tonight, you and I<br/> We're beautiful like diamonds in the sky<br/> Eye to eye, so alive<br/> We're beautiful like diamonds in the sky<br/>  <br>  Shine bright like a diamond (whoa)<br/> Shine bright like a diamond (whoa)<br/>  <br>  Shining bright like a diamond<br/> We're beautiful like diamonds in the sky<br/> Shine bright like a diamond (whoa)<br/> Shine bright like a diamond (whoa)<br/> Shining bright like a diamond<br/> <br> We're beautiful like diamonds in the sky<br/> Palms rise to the universe as we moonshine and molly<br/> Feel the warmth, we'll never die, we're like diamonds in the sky<br/> You're a shooting star I see, a vision of ecstasy<br/> <br>",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 10
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 11.png",
             "titulo": "El Retén-Remix",
-            "artista":"Criss & Ronny, Koffe el Kafetero, Zaider",
+            "artista": "Criss & Ronny, Koffe el Kafetero, Zaider",
             "album": "Single",
             "año": "2019",
             "duracion": "3:55",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart empty.png",
-            "liked":false,
-            "id":11
+            "letra": " Jader tremendo<br/> Criss y Ronny<br/>   <br>   Y es que tú me pones muchas trabas<br/> A todo momento como si fueras retén <br/> Ven déjame pasar, dame la entrada<br/> Que lo más malo que te puedo hacer<br/> Es llegarte a amar<br/>   <br>   No me digas que no<br/> Tengo los papeles en regla<br/> Admite y acepta<br/> Que todo está bien <br/>   <br>   No me digas que no<br/> Tengo los papeles en regla<br/>Admite y acepta <br/> Dame luz verde, mi vida<br/>   <br>  Y hago que te enamores<br/>Roja no, no me pares<br/>No me dejes en el retén<br/>Que te quiero es enamorar<br/>  <br>   Dame luz verde, mi vida <br/> Y hago que te enamores <br/> Roja no, no me pares <br/> No me dejes en el retén <br/> Que te quiero enamorar <br/>   <br>   Quiero darte caricias <br/>Bendita sea la hora en que yo a ti te conocí <br/> Tú, tú me envicias mirándome así <br/> No veo la hora que digas que sí <br/>   <br>   No me digas que no<br/> Tengo los papeles en regla<br/> Admite y acepta<br/> Que todo está bien <br/>   <br>   No me digas que no<br/>Tengo los papeles en regla<br/>Admite y acepta <br/>Dame luz verde, mi vida<br/> <br>  ",
+            "href": "",
+            "heart": "../assets/heart empty.png",
+            "liked": false,
+            "id": 11
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 12.png",
             "titulo": "Coco Channel",
-            "artista":"Eladio Carrion, Bad Bunny",
+            "artista": "Eladio Carrion, Bad Bunny",
             "album": "3MEN2 KBRN",
             "año": "2023",
             "duracion": "3:27",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":12
+            "letra": " Quiere Coco Chanel, Louis V, Bottega (Coco), yeah <br/> La puse en 69, no a la amiga (mmm)<br/> Ese culo tan lindo y tú con novio, baby, eso no pega <br/> Baby eso no pega <br/>   <br>   Chingamo' con mis prenda' puesta', quedó ciega (ice, ice, ice) <br/> Yeah, preguntan por mi y ella lo niega <br/> Nunca sale, pero si es por mi ella le llega (ella le llega) <br/>   <br>   Ya me acosté a dormir, pero si es pa' chingar levántame (Hey!) <br/> Tengo chavo con cojone', chapeáme (cash, cash, cash) <br/> Yo sé que tú también, perdóname <br/> No fue el destino, nah, fui yo que te llamé <br/> Qué rica te ves en mini, trajecito bikini (damn) <br/> Ferrari, uh, no le gustan los Lamborghini (skrrt, skrrt) <br/> Mucha pasta, Carbone, fetuccini <br/> Las de escorpio son peligro, lo dijo Mela y Rukmini, ey <br/> Una demon, la monté en el Roll-Royce (¡Eh!) y le puse YOVNGCHIMI (wuh) <br/> Yo no soy malo, nah, bebé, eso e' un gimmick <br/> Pero el sol de PR calienta má' que el de Phoenix <br/> Ella lo sabe, pa' Milán de compra', despué' pa' Rimini <br/> San Marino <br/>    <br>   (Todo por debajo 'el agua, submarino) <br/> Las moña' multicolor cristalino <br/> Le quité los Valentino, nos fuimo' despué' se vino (¡Hey!)   <br>   Mala, mala, ey <br/> La puse mala <br/> Los polvo' en la sala <br/> En el baño me escala <br/> Se te regó la máscara <br/> I don't know, yo no sé nada, je <br/> Yo no sé nada    <br/>   Quiere Coco Chanel, Louis V, Bottega (Coco), yeah <br/> La puse en 69, no a la amiga (mmm)<br/> Ese culo tan lindo y tú con novio, baby, eso no pega <br/> Baby eso no pega <br/>   <br>   Chingamo' con mis prenda' puesta', quedó ciega (ice, ice, ice) <br/> Yeah, preguntan por mi y ella lo niega <br/> Nunca sale, pero si es por mi ella le llega (ella le llega) <br/>",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 12
         },
-        {
+        { 
             "imagen": "../Landing/imagenes/Pictures songs/cancion 13.png",
             "titulo": "Dangerous",
-            "artista":"Madison Beer",
+            "artista": "Madison Beer",
             "album": "Silence Between Songs",
             "año": "2023",
             "duracion": "3:47",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart empty.png",
-            "liked":false,
-            "id":13
+            "letra": "I'll remember you this way <br/> Keep you safe inside my memory <br/> But I've held you here for far too long <br/> I wonder if you think of me <br/> I'm still putting up a fight <br/> While you're off and you're forgetting me <br/> Never got the chance to tell our story <br/> A tale as old as time <br/>   <br>  Where did you go? <br/>Is it something I said? (Something I said) <br/>Why am I alone in this bed? <br/>    <br>   Tell me the truth, what did I do?  Look at me, why can't I see? <br/> No, it can't be this easy to let me go <br/> But if you say so <br/> Guess I make love too dangerous <br/> Right when I think I hate you <br/> Something pulls me under like the tide <br/> Even picked a house and chose our kids' names <br/> You'd always be mine <br/>    <br>   Where did you go? <br/> Is it something I said? (Something I said) <br/> Why am I alone in this bed? <br/> Tell me the truth, what did I do? <br/> Look at me, why can't I see? <br/> No, it can't be this easy to let me go <br/> But if you say so <br/> Guess I make love too dangerous <br/> Ooh-ooh, I do <br/>",
+            "href": "",
+            "heart": "../assets/heart empty.png",
+            "liked": false,
+            "id": 13
         },
         {
             "imagen": "../Landing/imagenes/Pictures songs/cancion 14.png",
             "titulo": "ODEE",
-            "artista":"BLK ODYSSY",
+            "artista": "BLK ODYSSY",
             "album": "DIAMONDS & FREAKS",
             "año": "2023",
             "duracion": "3:26",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":14
+            "letra": " Shorty wan' be my mistress, plottin' all on these riches <br/> Better of bein' my vixen, gon' mark me off the hit list <br/>Mind your business, shawty fuckin' with a misfit <br/>Shawty fuckin' with a misfit, shawty fuckin' with a— <br/>The way she think I'm Hercules, want me to push on her hips <br/>Shiny things and diamond rings, she likes the gold on my wrist  <br/>   <br>   I love it when you talkin' cocky, I love it when you talkin' naughty <br/>Rush to the after party, party, ah, ah, shit, yeah <br/>If she don't reply to me than that's her loss, yeah <br/>I got women down to ride for me that sauce, yeah <br/>She recognize the bag I'm chasin' and thе way I'm flossin' <br/>Baby, please, call me daddy, shе know who the— <br/>   <br>   Get a bad, spend a bag, she ain't lookin' at money tag <br/>Handcuff like it's Cartier, ask if I'm in the bag?<br/>Odee (Bitch, my wrist odee)<br/>Odee (Bitch, this drip odee)<br/>Odee (Bitch, my gliss odee)<br/>Odee (Bitch, this drip odee)<br/>   <br>   Pretty boy, she adore, other niggas she gon' cut 'em off <br/>Spray a nigga like some Lysol, ask if I'm in the bag? <br/>Odee (Bitch, my wrist odee)<br/>Odee (Bitch, my drip odee)<br/>Odee (Bitch, this gliss odee)<br/>Odee (Bitch, this drip odee, yeah, yeah)<br/>   <br>   She my genie in a bottle <br/>Said she wanna ride out then she lay low<br/>Brown skin shawty stay out in San Antonio<br/>I, I, I spend a couple bands, I ain't trippin', shit, you know it's nothin' (Uh, yeah) <br/>Vacuum seal on the zip pack, the plug bussin' like ah, yeah <br/>And she knows, she knows, she knows I do the most, yeah <br/>It's a rush when she takes off all clothes, yeah   <br>",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 14
         },
-        {
+        { 
             "imagen": "../Landing/imagenes/Pictures songs/cancion 15.png",
             "titulo": "GENTO",
-            "artista":"SB19",
+            "artista": "SB19",
             "album": "Single",
             "año": "2023",
             "duracion": "3:52",
-            "letra": "",
-            "href":"",
-            "heart":"../assets/heart.png",
-            "liked":true,
-            "id":15
+            "letra": "I want some I get some no later <br/> I woke up and baked that potato <br/> Got carbed to shape me for major <br/> But I stay me not mediocre <br/> Look at me tell me what you see all gucci but the real question is who's really me <br/> A movie's definitely not my reality 'cause you see marumi marumi marumi eww <br/> Kadiri <br/>    <br>   Yeah I'm gonna see you later (later) <br/> Pagkatapos kong mag-shower (shower) <br/> Pagkatapos kong mag-shower (power) <br/> Kulang pa sa sour mga hater kaya <br/> Alamin ang mga bagay-bagay <br/> 'Di pwedeng anay sa'king bahay <br/> Tahimik lang daw ang matibay  <br/>  Pero 'pag tinopak talagang mag-iingay (gento) <br/>    <br>  Gento gento <br/> 'Di 'to basta-basta bingo bingo <br/> Need mo makumpleto parang bento gento  <br/>  Ano kaya mo <br/> Pilit na hinukay ang bumbunan makakita lang ng ginto ginto <br/> Kahit na wala pang hinto ciento por ciento bawat bitaw ko mismo 'eto kaya mo <br/> 'Di ka basta-basta makakakita ng gento <br/>    <br>  'Di ko na kailangan lumunok ng bato <br/> Hindi mala-darna 'to aandar ang makina ko <br/> Tanging mekaniko ay ako 'la nang moni moniko <br/> Sa daming pinagdaanan nagpatong na'ng istori ko <br/> Usyoso mga chismoso halika't pumanhik na rito uh <br/>  'Di naman talaga madali aminin ko pa man o hindi  <br/> Sa likod ng mga tagong paghikbi kayamanan kong hapdi <br/> Panis 'to laging alisto kahit pa si Mephisto tiklop 'pag nag-beast mode na bihis ko  <br/>  ",
+            "href": "",
+            "heart": "../assets/heart.png",
+            "liked": true,
+            "id": 15
         }
-    
     ]
-
 }
