@@ -7,10 +7,6 @@ async function getText(playlist) {
     let myObject = await fetch(playlist);
     lista = await myObject.json();
 
-    //para que pase por cada uno de los elementos del objeto    
-    // lista.playlist.forEach(element => {
-    //     renderSong(element)
-    // });
 }
 
 function findSong(id) {
@@ -101,11 +97,6 @@ function renderLyrics(song) {
     console.log(song)
     
 }
-
-
-
-
-
 
 async function updateDetails() {
     await getText(playlist)

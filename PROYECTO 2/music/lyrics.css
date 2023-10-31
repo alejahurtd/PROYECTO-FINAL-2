@@ -20,7 +20,7 @@
   
   .leftColumn__tex {
     height: 75%;
-    font-size: 25px;
+    font-size: 1.5625rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
   .searchAndUser__search {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5rem;
     width: 400px;
     text-align: end;
     background-color: #ffffff00;
@@ -108,22 +108,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 1rem;
-    gap: 1px;
+    gap: 0.0625rem;
   }
   
   .song__Title {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #fff;
   }
   
   .song__singer {
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #d9dadc;
     
   }
   .song__Time {
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #d9dadc;
   }
   
@@ -156,14 +156,14 @@
   .lyrics {
     color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding-bottom: 0.5rem;
   }
   
   .Lyrics__text {
     color: white;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 0.9375rem;
     overflow-y: scroll;
     height: 250px;
   }
