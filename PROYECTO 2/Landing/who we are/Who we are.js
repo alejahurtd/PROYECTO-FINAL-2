@@ -12,7 +12,7 @@ perfilIzquierda.classList.add("perfil__possition");
 
 const imagenIzquierda = document.createElement("img");
 imagenIzquierda.classList.add("perfil__imagen");
-imagenIzquierda.src = "./imagenes/foto maira.png";
+imagenIzquierda.src = "../imagenes/foto maira.png";
 imagenIzquierda.alt = "";
 perfilIzquierda.appendChild(imagenIzquierda);
 
@@ -65,7 +65,7 @@ perfilDerecha.classList.add("perfil__possition");
 
 const imagenDerecha = document.createElement("img");
 imagenDerecha.classList.add("perfil__imagen");
-imagenDerecha.src = "./imagenes/foto geri.png";
+imagenDerecha.src = "../imagenes/foto geri.png";
 imagenDerecha.alt = "";
 perfilDerecha.appendChild(imagenDerecha);
 
