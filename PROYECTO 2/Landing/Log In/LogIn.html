@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./LogIn.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <!-- navegador superior -->
+      <section>
+      <nav class="nav">
+        <div class="menu">
+         <a href="Index.html"><img class="menu__image--logo" src="../imagenes/logo.png" alt="Logo" /></a> 
+        </div>
+        <div class="menu__text--position">
+          <a class="menu__text" href="./WhoWeAre.html">Who we are</a>
+          <a class="menu__text" href="./SignUp.html">Sign Up</a>
+          <a class="menu__text" href="./LogIn.html">Log In</a>
+        </div>
+      </nav>    
+      </section>
+      <!-- inicia el login -->
+      <section class="login">
+        <div class="login__cuadro">
+            <div>
+                <p class="login__tittle">Login</p>
+            </div>
+            <div class="login__form">
+                <div class="form__Item">
+                    <div class="form__Title">Email o username</div>
+                    <input
+                      type="text"
+                      class="form__Input"
+                      placeholder="Enter your email"
+                    />
+                </div>
+                <div class="form__Item">
+                    <div class="form__Title">Password</div>
+                    <input
+                      type="text"
+                      class="form__Input"
+                      placeholder="Enter your email"
+                    />
+            </div>
+            <div class="form__rebember">
+                <img class="form__rebember--image" src="./switch.png" alt="">
+                <p class="form__rebember--text">Remember</p>
+              </div>
+              <button class="button"><a class="button__text" href="">SIGN UP</a></button>
+              <div class="finaltext">
+                <p>Have you forgotten your password?</p>
+                <br>
+                <a class="finaltext" href="SignUp.html">Do you have an account? <br/>
+                    Subscribe to Spotify</a>
+              </div>
+        </div>
+       
+      </section>
+    </body>
+</html>

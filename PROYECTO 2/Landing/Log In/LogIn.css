@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+  }
+  body {
+    background-color: rgb(41, 65, 171);
+    height: 100vh;
+  }
+  .nav {
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .menu__text {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu__text--position {
+    display: flex;
+    align-items: end;
+    gap: 3rem;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  .menu__image--logo {
+    width: 10.625rem;
+    height: 3.125rem;
+  }
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10rem;
+    padding: 5rem;
+
+  } 
+  .login__cuadro{
+  background-color: #1ed760;
+  width: 30rem;
+  height: 35rem; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  }
+  .login__tittle{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 2rem;
+  }
+  .login__form{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0,625rem;
+  }
+  .form__Item {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+  }
+  .form__Title {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+  
+  .form__Input {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
+    
+    
+  }
+  .form__rebember{
+    display: flex;
+    align-items: flex-start;
+    margin-left: -8.8rem;
+    padding-top: 1rem;
+  }
+  .form__rebember--image{
+    width: 25%;
+  }
+  .form__rebember--text{
+    color: #fff;
+    display: flex;
+    padding-top: rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-left: .5rem;
+  }
+  .button {
+    background-color: #2941abc2;
+    font-weight: bold;
+    font-size: 0.9375rem;
+    border: none;
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    margin-block: 2rem;
+  }
+  .button__text{
+    text-decoration: none;
+    color: #fff;
+  }
+  .finaltext{
+    color: #2941ab;
+    text-align: center;
+    text-decoration: none;
+  }

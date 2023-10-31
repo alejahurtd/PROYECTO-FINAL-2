@@ -42,7 +42,7 @@ menuText.appendChild(signUpLink);
 ////Log in
 const logInLink = document.createElement('a');
 logInLink.classList = ('menu__text');
-logInLink.href = '../LogIn.html';
+logInLink.href = '../Log in/LogIn.html';
 logInLink.textContent = 'Log In';
 menuText.appendChild(logInLink);
 
