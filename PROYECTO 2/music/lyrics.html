@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lyrics.css" />
     <title>Spotify</title>
 </head>
+
 <body>
-    
+    <!-- Columna Izquierda-->
+    <section class="leftColumn">
+        <div class="leftColumn__tex">
+            <a class="leftColumn__tex--nonedecoration" href="music.html">Music</a>
+            <a class="leftColumn__tex--nonedecoration" href="../Liked songs/LikedSongs.html">Liked songs</a>
+        </div>
+        <img src="../Landing/imagenes/logo.png" class="spotifyLogo" />
+    </section>
+    <section class="content">
+        <!-- Buscador y perfil-->
+        <section class="searchAndUser">
+            <div class="searchAndUser__searchContainer">
+                <input class="searchAndUser__search" placeholder="Search" type="text" />
+            </div>
+            <a href="../Profile/Profile.html"><img src="../assets/icon profile.png" alt=""
+                    class="searchAndUser__userIcon" /></a>
+        </section>
+        <!-- Canciones-->
+        <section id="songsContent"></section>
+
+
 </body>
 <footer>
     <script type="module" src="./lyrics.js"></script>
 </footer>
+
 </html>

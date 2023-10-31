@@ -104,19 +104,21 @@ songsContainer.classList.add('songsContainer');
 content.appendChild(songsContainer);
 
 //estamos llamando como una constante nuestro JSON
-const topTracksPlaylist= "../Json/topTracks.json"
-let listaTopTracks
+const playlist= "../Json/canciones.json"
+let lista
 
-async function getText(topTracksPlaylist){
-    let myObject= await fetch(topTracksPlaylist);
-    listaTopTracks= await myObject.json();
+async function getText(playlist){
+    let myObject= await fetch(playlist);
+    lista= await myObject.json();
     
 //para que pase por cada uno de los elementos del objeto    
-    listaTopTracks.topTracks.forEach(element => {   
-        renderSong(element)
+    lista.playlist.forEach(element => {   
+        if(element.liked){
+            
+            renderSong(element)
+        }
     });
 }
-
 //Cuadro negro grande que contine laista de canciones
 
 
@@ -131,14 +133,11 @@ function renderSong (element) {
     songContainer.classList.add("songContainer")
     song.appendChild(songContainer)
 
-//redireccion a lyrics por la imagen
-    const aHref = document.createElement('a');
-    // aHref.href = './ruta'
-    songContainer.appendChild(aHref)
+
 //imagen cancion
     const image = document.createElement("img")
     image.src = element.imagen
-    aHref.appendChild(image)
+    songContainer.appendChild(image)
 
     const songText = document.createElement('div')
     songText.classList.add("song__Text");
@@ -147,13 +146,9 @@ function renderSong (element) {
     //titulo de la cancion
     const songTitlee = document.createElement('div')
     songTitlee.classList.add("song__Title");
-    songText.appendChild(songTitlee)
-
-    //redireccionar a lyrics por titulo de cancion
-    const aHref2 = document.createElement('a')
-    // aHref.href = './ruta'
     songTitlee.innerText = element.titulo
-    songTitlee.appendChild(aHref2)
+    songTitlee.addEventListener("click", function () { lyrics(element.id) })
+    songText.appendChild(songTitlee)
 
     //cantante
     const songSinger = document.createElement('div');
@@ -177,9 +172,26 @@ function renderSong (element) {
     songFavContainer.appendChild(time)
 }
 
-getText(topTracksPlaylist)
+getText(playlist)
 
+function lyrics(id) {
+    let cancion = null
+    for (let i = 0; i < lista.playlist.length; i++) {
+        console.log(id)
+        console.log(lista.playlist[i].id)
+        if (id == lista.playlist[i].id) {
+            cancion = lista.playlist[i]
+        }
+    }
 
+    if (cancion == null) {
+        alert("no hay nadita")
+    } else {
+        window.location.href = '../music/lyrics.html?id=' + cancion.id
+    }
+
+    
+}
 
 
 

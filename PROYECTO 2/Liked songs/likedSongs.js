@@ -147,6 +147,7 @@ function renderSong (element) {
     //titulo de la cancion
     const songTitlee = document.createElement('div')
     songTitlee.classList.add("song__Title");
+    songTitlee.addEventListener("click", function () { lyrics(element.id) })
     songText.appendChild(songTitlee)
 
     //redireccionar a lyrics por titulo de cancion
@@ -179,7 +180,24 @@ function renderSong (element) {
 
 getText(playlist)
 
+function lyrics(id) {
+    let cancion = null
+    for (let i = 0; i < lista.playlist.length; i++) {
+        console.log(id)
+        console.log(lista.playlist[i].id)
+        if (id == lista.playlist[i].id) {
+            cancion = lista.playlist[i]
+        }
+    }
 
+    if (cancion == null) {
+        alert("no hay nadita")
+    } else {
+        window.location.href = '../music/lyrics.html?id=' + cancion.id
+    }
+
+    
+}
 
 
 
