@@ -1,3 +1,54 @@
+// //BARRA DE NAVEGACIÓN 
+
+// //  Secction pricipal del HTML y creamos el elemento NAV
+// const navegadorBarra = document.getElementById('navegador');
+// const nav = document.createElement('nav');
+// nav.className = 'nav';
+
+// // elemento 'div' con la clase 'menu'
+// const menu = document.createElement('div');
+// menu.className = 'menu';
+
+// // logotipo
+// const logoImage = document.createElement('img');
+// logoImage.className = 'menu__image--logo';
+// logoImage.src = '../imagenes/logo.png';
+// logoImage.alt = 'Logo';
+
+// //  segundo 'div' con la clase 'menu__text--position'
+// const textPosition = document.createElement('div');
+// textPosition.className = 'menu__text--position';
+
+// // Crear enlaces 'a' para la barra de nav
+// const whoWeAreLink = document.createElement('a');
+// whoWeAreLink.className = 'menu__text';
+// whoWeAreLink.href = './WhoWeAre.html';
+// whoWeAreLink.textContent = 'Who we are';
+
+// const signUpLink = document.createElement('a');
+// signUpLink.className = 'menu__text';
+// signUpLink.href = './SignUp.html';
+// signUpLink.textContent = 'Sign Up';
+
+// const logInLink = document.createElement('a');
+// logInLink.className = 'menu__text';
+// logInLink.href = './LogIn.html';
+// logInLink.textContent = 'Log In';
+
+// // inyectamos al html
+// menu.appendChild(logoImage);
+// textPosition.appendChild(whoWeAreLink);
+// textPosition.appendChild(signUpLink);
+// textPosition.appendChild(logInLink);
+
+// nav.appendChild(menu);
+// nav.appendChild(textPosition);
+
+// navegadorBarra.appendChild(nav);
+
+
+// PARTE CENTRAL NUESTRA INFORMACIÓN 
+
 // Obtén el elemento principal donde deseas inyectar el contenido
 const cuadroGlobal = document.getElementById("elCuadroGlobal");
 

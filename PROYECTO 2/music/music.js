@@ -35,7 +35,7 @@ content.classList.add('content');
 document.body.appendChild(content);
 
 //Buscador y perfil
-const searchAndUser= document.createElement('section');
+const searchAndUser = document.createElement('section');
 searchAndUser.classList.add('searchAndUser');
 content.appendChild(searchAndUser);
 
@@ -67,27 +67,27 @@ userProfileLink.appendChild(userIconImg);
 
 
 //estamos llamando como una constante nuestro JSON
-const playlist= "../Json/canciones.json"
+const playlist = "../Json/canciones.json"
 let lista
 
-async function getText(playlist){
-    let myObject= await fetch(playlist);
-    lista= await myObject.json();
-    
-//para que pase por cada uno de los elementos del objeto    
-    lista.playlist.forEach(element => {   
+async function getText(playlist) {
+    let myObject = await fetch(playlist);
+    lista = await myObject.json();
+
+    //para que pase por cada uno de los elementos del objeto    
+    lista.playlist.forEach(element => {
         renderSong(element)
     });
 }
 
 //Cuadro negro grande que contine laista de canciones
-const contenedorLista= document.getElementById("contenedorLista")
+const contenedorLista = document.getElementById("contenedorLista")
 contenedorLista.classList.add("songs__Content")
 content.appendChild(contenedorLista)
 
 //Titulo SONG de la lista
-const songTitle= document.createElement("p")
-songTitle.innerText="Songs"
+const songTitle = document.createElement("p")
+songTitle.innerText = "Songs"
 songTitle.classList.add("songs__Title")
 contenedorLista.appendChild(songTitle)
 
@@ -96,7 +96,7 @@ const songs = document.createElement("div")
 songs.classList.add("songs")
 contenedorLista.appendChild(songs)
 
-function renderSong (element) {
+function renderSong(element) {
     //lista de canciones
     const song = document.createElement("div")
     song.classList.add("song")
@@ -107,11 +107,11 @@ function renderSong (element) {
     songContainer.classList.add("songContainer")
     song.appendChild(songContainer)
 
-//redireccion a lyrics por la imagen
+    //redireccion a lyrics por la imagen
     const aHref = document.createElement('a');
     // aHref.href = './ruta'
     songContainer.appendChild(aHref)
-//imagen cancion
+    //imagen cancion
     const image = document.createElement("img")
     image.src = element.imagen
     aHref.appendChild(image)
@@ -129,6 +129,7 @@ function renderSong (element) {
     const aHref2 = document.createElement('a')
     // aHref.href = './ruta'
     songTitlee.innerText = element.titulo
+    songTitlee.addEventListener("click", function () { lyrics(element.id) })
     songTitlee.appendChild(aHref2)
 
     //cantante
@@ -137,7 +138,7 @@ function renderSong (element) {
     songSinger.innerText = element.artista
     songText.appendChild(songSinger)
 
-// contenedor de favoritos y tiempo de duracion de la cancion
+    // contenedor de favoritos y tiempo de duracion de la cancion
     const songFavContainer = document.createElement('div')
     songFavContainer.classList.add('songFav__Container')
     song.appendChild(songFavContainer)
@@ -156,4 +157,20 @@ function renderSong (element) {
 getText(playlist)
 
 
+function lyrics(id) {
+    let cancion = null
+    for (let i = 0; i < lista.playlist.length; i++) {
+        console.log(id)
+        console.log(lista.playlist[i].id)
+        if (id == lista.playlist[i].id) {
+            cancion = lista.playlist[i]
+        }
+    }
 
+    if (cancion == null) {
+        alert("no hay nadita")
+    } else {
+        window.location.href = './lyrics.html?id=' + cancion.id
+    }
+
+}

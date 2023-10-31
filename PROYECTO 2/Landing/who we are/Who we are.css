@@ -47,15 +47,14 @@
 }
 .cuadroglobal__vertical{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
 
   }
   .perfil__possition{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .perfil__imagen{
@@ -65,8 +64,7 @@
     color: #fff;
     font-size: 1.5rem;
     display: block;
-    margin-block-start: 1rem;
-    align-items: center
+  
     
   }
 .cuadroglobal__centro{
