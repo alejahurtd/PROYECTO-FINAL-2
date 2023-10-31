@@ -198,14 +198,3 @@ function lyrics(id) {
 
     
 }
-
-
-
-
-
-
-
-
-
-
-

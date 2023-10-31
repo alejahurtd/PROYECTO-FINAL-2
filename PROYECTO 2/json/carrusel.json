@@ -1,7 +1,7 @@
 {
     "carruselImages": [
         {
-            "link": "SignUp.html",
+            "link": "../Landing/singUp/singUp.html",
             "src": "../imagenes/carrusel/imagen 1.png",
             "alt": "imagen 1",
             "class": "carrusel__image--arreglos"

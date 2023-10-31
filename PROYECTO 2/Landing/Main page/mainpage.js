@@ -28,21 +28,21 @@ nav.appendChild(menuText);
 ///Who we are
 const whoWeAre = document.createElement('a');
 whoWeAre.classList.add('menu__text'); 
-whoWeAre.href = './Who we are.html';
+whoWeAre.href = '../Who we are/Who we are.html';
 whoWeAre.textContent = 'Who we are';
 menuText.appendChild(whoWeAre);
 
 ///Sign up
 const signUpLink = document.createElement('a');
 signUpLink.classList = ('menu__text');
-signUpLink.href = './singUp.html';
+signUpLink.href = '../singUp/singUp.html';
 signUpLink.textContent = 'Sign Up';
 menuText.appendChild(signUpLink);
 
 ////Log in
 const logInLink = document.createElement('a');
 logInLink.classList = ('menu__text');
-logInLink.href = '../Log in/LogIn.html';
+logInLink.href = '../Log In/LogIn.html';
 logInLink.textContent = 'Log In';
 menuText.appendChild(logInLink);
 
