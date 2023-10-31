@@ -46,8 +46,7 @@ logInLink.href = '../LogIn.html';
 logInLink.textContent = 'Log In';
 menuText.appendChild(logInLink);
 
-
-
+//PREGUNTA RENDER 
 //estamos llamando como una constante nuestro JSON
 const carrusel = "../../json/carrusel.json";
 let lista
@@ -65,7 +64,6 @@ async function getText(carrusel){
 getText(carrusel)
 
 function renderCarrusel (element) {
-  //lista de canciones
   const image = document.createElement("div")
 
   image.classList.add(element.class)
@@ -82,132 +80,62 @@ section.appendChild(contenedor)
 
 
 
+// INFO FINAL 
 
+const finalSection = document.createElement('section');
+finalSection.className = 'final';
 
+// div de la izquierda
+const leftDiv = document.createElement('div');
+leftDiv.className = 'final__text--left';
 
-// // Definir un array de objetos que representan las imágenes en el carrusel
-// const carruselImages = [
-//     {
-//       link: "SignUp.html",
-//       src: './images carrusel/imagen 1.png',
-//       alt: "imagen 1",
-//     },
-//     {
-//       src: './images carrusel/imagen 2.png',
-//       alt: 'imagen 2',
-//     },
-//     {
-//       link: 'LogIn.html',
-//       src: './images carrusel/imagen 3.png',
-//       alt: 'imagen 3',
-//       class: 'carrusel__image--arreglos',
-//     },
-//     {
-//       src: './images carrusel/imagen 4.png',
-//       alt: 'imagen 4',
-//       class: 'carrusel__image--arreglos',
-//     },
-//     {
-//       link: 'LogIn.html',
-//       src: './images carrusel/imagen 5.png',
-//       alt: 'imagen 5',
-//       class: 'carrusel__image--arreglos',
-//     },
-//   ];
-  
-  // // Función para crear un elemento div con imagen y enlace
-  // function createElementWithLink(imageData) {
-  //   const div = document.createElement("div");
-  
-  //   if (imageData.link) {
-  //     const link = document.createElement("a");
-  //     link.href = imageData.link;
-  //     link.appendChild(createImage(imageData.src, imageData.alt, imageData.class));
-  //     div.appendChild(link);} 
-  //     else {div.appendChild(createImage(imageData.src, imageData.alt, imageData.class));
-  //   }
-  
-  //   return div;
-  // }
-  
-  // const createImage=(src, alt, className)=> {
-  //   const image = document.createElement("img");
-  //   image.src = src;
-  //   image.alt = alt;
-  //   if (className) {
-  //     image.classList.add(className);}
-  //   image.classList.add('carrusel__image');
-  
-  //   return image;
-  // }
-  
-  // // Crear el carrusel
-  // const carrusel = document.createElement('div');
-  // carrusel.classList.add('carrusel');
-  
-  // // Agregar elementos al carrusel
-  // carruselImages.forEach(imageData => {
-  //   const carouselItem = createElementWithLink(imageData);
-  //   carrusel.appendChild(carouselItem);
-  // });
-  
-  // // Agregar el carrusel al documento (o al elemento que desees)
-  // document.body.appendChild(carrusel);
-  
-//   // Crear la sección final
-// const final = document.createElement('section');
-// final.className = 'final';
+// Crear los enlaces y agregar texto
+const legalLink = document.createElement('a');
+legalLink.className = 'final__text';
+legalLink.href = '#';
+legalLink.textContent = 'Legal';
 
-// // Crear el div izquierdo
-// const left = document.createElement('div');
-// left.className = 'final__text--left';
+const privacyPolicyLink = document.createElement('a');
+privacyPolicyLink.className = 'final__text';
+privacyPolicyLink.href = '#';
+privacyPolicyLink.textContent = 'Privacy policy';
 
-// // Crear enlaces en el div izquierdo
-// const legalLink = document.createElement('a');
-// legalLink.className = 'final__text';
-// legalLink.href = '#';
-// legalLink.textContent = 'Legal';
+const cookiesLink = document.createElement('a');
+cookiesLink.className = 'final__text';
+cookiesLink.href = '#';
+cookiesLink.textContent = 'Coockies';
 
-// const privacyPolicyLink = document.createElement('a');
-// privacyPolicyLink.className = 'final__text';
-// privacyPolicyLink.href = '#';
-// privacyPolicyLink.textContent = 'Privacy policy';
+// inyectar
+leftDiv.appendChild(legalLink);
+leftDiv.appendChild(privacyPolicyLink);
+leftDiv.appendChild(cookiesLink);
 
-// const cookiesLink = document.createElement('a');
-// cookiesLink.className = 'final__text';
-// cookiesLink.href = '#';
-// cookiesLink.textContent = 'Coockies';
+//  div de la derecha
+const rightDiv = document.createElement('div');
+rightDiv.className = 'final__text--right';
 
-// leftDiv.appendChild(legalLink);
-// leftDiv.appendChild(privacyPolicyLink);
-// leftDiv.appendChild(cookiesLink);
+// Texto
+const contactParagraph = document.createElement('p');
+contactParagraph.className = 'final__text';
+contactParagraph.textContent = 'Contact';
 
-// // Crear el div derecho
-// const rightDiv = document.createElement('div');
-// rightDiv.className = 'final__text--right';
+const telParagraph = document.createElement('p');
+telParagraph.className = 'final__text';
+telParagraph.textContent = 'Tel: +1(908)209-2263';
 
-// // Crear párrafos en el div derecho
-// const contactText = document.createElement('p');
-// contactText.className = 'final__text';
-// contactText.textContent = 'Contact';
+const mailParagraph = document.createElement('p');
+mailParagraph.className = 'final__text';
+mailParagraph.textContent = 'Mail: supportspotify@gmail.com';
 
-// const telText = document.createElement('p');
-// telText.className = 'final__text';
-// telText.textContent = 'Tel: +1(908)209-2263';
+// Agregar al html
+rightDiv.appendChild(contactParagraph);
+rightDiv.appendChild(telParagraph);
+rightDiv.appendChild(mailParagraph);
 
-// const mailText = document.createElement('p');
-// mailText.className = 'final__text';
-// mailText.textContent = 'Mail: supportspotify@gmail.com';
+// Agregar los divs a la sección final
+finalSection.appendChild(leftDiv);
+finalSection.appendChild(rightDiv);
 
-// rightDiv.appendChild(contactText);
-// rightDiv.appendChild(telText);
-// rightDiv.appendChild(mailText);
+// inyectar todo al body 
+document.body.appendChild(finalSection);
 
-// // Agregar los divs al div final
-// finalSection.appendChild(leftDiv);
-// finalSection.appendChild(rightDiv);
-
-// // Agregar la sección final al documento (o al elemento que desees)
-// document.body.appendChild(finalSection);
-
-  
