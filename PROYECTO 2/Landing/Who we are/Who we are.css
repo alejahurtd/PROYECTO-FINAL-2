@@ -99,7 +99,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 1rem;
-    margin-top: -8px;
+    margin-top: -0.5rem;
   }
   .final__text {
     color: rgb(145, 148, 150);
