@@ -44,7 +44,7 @@ body {
 }
 
 .carrusel {
-  height: 80%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -65,12 +65,12 @@ body {
 }
 
 .carrusel__image {
-  margin-inline: 5rem;
+  margin-inline: 4rem;
   display: flex;
   padding-top: 3rem;
   margin-top: -2rem; 
   height: 450px;
-  animation: slide 15s linear infinite;
+  animation: slide 18s linear infinite;
 
 }
 /* .carrusel__image--animated {
@@ -92,10 +92,10 @@ body {
     transform: translateX(-219%); /* Desplaza a la imagen 4 */
   }
   60%, 75% {
-    transform: translateX(-350%); /* Desplaza a la imagen 5 */
+    transform: translateX(-325%); /* Desplaza a la imagen 5 */
   }
   80%,100% {
-    transform: translateX(-450%); /* Desplaza a la imagen 5 */
+    transform: translateX(-438%); /* Desplaza a la imagen 5 */
   }
 }
 
