@@ -46,7 +46,7 @@ logInLink.href = '../Log In/LogIn.html';
 logInLink.textContent = 'Log In';
 menuText.appendChild(logInLink);
 
-//PREGUNTA RENDER 
+// CARRUSEL
 //estamos llamando como una constante nuestro JSON
 const carrusel = "../../json/carrusel.json";
 let lista
@@ -65,11 +65,22 @@ getText(carrusel)
 
 function renderCarrusel (element) {
   const image = document.createElement("div")
-
   image.classList.add(element.class)
+
   const imagenCarrusel =document.createElement ("img")
   imagenCarrusel.src= element.src
 
+  //agregamos la clase del tiempo carrusel 
+  imagenCarrusel.classList.add('carrusel__image--animated');
+
+// evento click para que los links del JSON CARRUSEL funcionen
+
+if(element.enlace){
+
+  imagenCarrusel.addEventListener('click', function() {
+    window.location.href = element.enlace;
+  });
+}
   image.appendChild(imagenCarrusel)
   contenedor.appendChild(image)
 }

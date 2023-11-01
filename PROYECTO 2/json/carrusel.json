@@ -1,35 +1,36 @@
 {
     "carruselImages": [
         {
-            "link": "../Landing/singUp/singUp.html",
+            "enlace": "../singUp/singUp.html",
             "src": "../imagenes/carrusel/imagen 1.png",
             "alt": "imagen 1",
-            "class": "carrusel__image--arreglos"
+            "class": "carrusel__image"
         },
         {
             "src": "../imagenes/carrusel/imagen 2.png",
             "alt": "imagen 2",
-            "link":"",
-            "class":"carrusel__image--arreglos"
+            "class":"carrusel__image",
+            "enlace": ""
 
         },
         {
-            "link": "LogIn.html",
+            "enlace": "../Log In/LogIn.html",
             "src": "../imagenes/carrusel/imagen 3.png",
-            "class": "carrusel__image--arreglos",
+            "class": "carrusel__image",
             "alt":""
         },
         {
             "src": "../imagenes/carrusel/imagen 4.png",
             "alt": "imagen 4",
-            "class": "carrusel__image--arreglos",
-            "link":""
+            "class": "carrusel__image",
+            "enlace":""
+
         },
         {
-            "link": "LogIn.html",
+            "enlace": "LogIn.html",
             "src": "../imagenes/carrusel/imagen 5.png",
             "alt": "imagen 5",
-            "class": "carrusel__image--arreglos"
+            "class": "carrusel__image"
         }
     ]
 }
