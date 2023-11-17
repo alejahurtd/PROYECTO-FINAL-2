@@ -102,6 +102,7 @@ content.appendChild(OnlyVisibleToYou);
 const songsContainer = document.getElementById("contenedorLista");
 songsContainer.classList.add('songsContainer');
 content.appendChild(songsContainer);
+//-------//
 
 //estamos llamando como una constante nuestro JSON
 const playlist= "../Json/canciones.json"

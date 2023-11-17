@@ -86,32 +86,20 @@ username.classList.add('username');
 username.textContent = 'Username';
 contentTitles.appendChild(username);
 
-
+import Cancion from "../Utils/Utilscanciones.js";
 //estamos llamando como una constante nuestro JSON
 const playlist= "../Json/canciones.json"
 let lista
 
-async function getText(playlist){
-    let myObject= await fetch(playlist);
-    lista= await myObject.json();
-    
-//para que pase por cada uno de los elementos del objeto    
-    lista.playlist.forEach(element => {   
-        if(element.liked){
-            
-            renderSong(element)
-        }
-    });
-}
-
-//Cuadro negro grande que contine la lista de canciones
-const contenedorLista= document.getElementById("contenedorLista")
+////se colocan arriba para que cuando llamemos las funciones encuentre donde ubircalos
+//Cuadro negro grande que contine laista de canciones
+const contenedorLista = document.getElementById("contenedorLista")
 contenedorLista.classList.add("songs__Content")
 content.appendChild(contenedorLista)
 
 //Titulo SONG de la lista
-const songTitle= document.createElement("p")
-songTitle.innerText="Songs"
+const songTitle = document.createElement("p")
+songTitle.innerText = "Songs"
 songTitle.classList.add("songs__Title")
 contenedorLista.appendChild(songTitle)
 
@@ -120,62 +108,26 @@ const songs = document.createElement("div")
 songs.classList.add("songs")
 contenedorLista.appendChild(songs)
 
-function renderSong (element) {
-    //lista de canciones
-    const song = document.createElement("div")
-    song.classList.add("song")
-    songs.appendChild(song)
+async function getText(playlist) {
+    let myObject = await fetch(playlist);
+    lista = await myObject.json();
 
-    //contenedor de info canciones
-    const songContainer = document.createElement("div")
-    songContainer.classList.add("songContainer")
-    song.appendChild(songContainer)
+    //lammar la funcion crearCanciones
+    crearCanciones()
+    //para que pase por cada uno de los elementos del objeto    
+    lista.playlist.forEach(element => {
+        // renderSong(element)
+    });
+}
 
-//redireccion a lyrics por la imagen
-    const aHref = document.createElement('a');
-    // aHref.href = './ruta'
-    songContainer.appendChild(aHref)
-//imagen cancion
-    const image = document.createElement("img")
-    image.src = element.imagen
-    aHref.appendChild(image)
-
-    const songText = document.createElement('div')
-    songText.classList.add("song__Text");
-    songContainer.appendChild(songText)
-
-    //titulo de la cancion
-    const songTitlee = document.createElement('div')
-    songTitlee.classList.add("song__Title");
-    songTitlee.addEventListener("click", function () { lyrics(element.id) })
-    songText.appendChild(songTitlee)
-
-    //redireccionar a lyrics por titulo de cancion
-    const aHref2 = document.createElement('a')
-    // aHref.href = './ruta'
-    songTitlee.innerText = element.titulo
-    songTitlee.appendChild(aHref2)
-
-    //cantante
-    const songSinger = document.createElement('div');
-    songSinger.classList.add("song__singer")
-    songSinger.innerText = element.artista
-    songText.appendChild(songSinger)
-
-// contenedor de favoritos y tiempo de duracion de la cancion
-    const songFavContainer = document.createElement('div')
-    songFavContainer.classList.add('song__Fav--Container')
-    song.appendChild(songFavContainer)
-
-    const favImg = document.createElement('img')
-    favImg.classList.add('song__Fav')
-    favImg.src = element.heart
-    songFavContainer.appendChild(favImg)
-
-    const time = document.createElement('div')
-    time.classList.add('song__Time')
-    time.innerText = element.duracion
-    songFavContainer.appendChild(time)
+function crearCanciones() {
+    for (let i = 0; i < lista.playlist.length; i++) {
+        let plantillaCancion = new Cancion(
+            lista.playlist[i].imagen, lista.playlist[i].titulo, lista.playlist[i].artista, lista.playlist[i].album, lista.playlist[i].año, lista.playlist[i].duracion, lista.playlist[i].letra, lista.playlist[i].heart, lista.playlist[i].liked, lista.playlist[i].id
+        )
+        console.log(plantillaCancion);
+        plantillaCancion.render(songs)
+    }
 }
 
 getText(playlist)
