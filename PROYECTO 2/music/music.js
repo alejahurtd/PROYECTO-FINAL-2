@@ -85,32 +85,41 @@ contenedorLista.appendChild(songTitle)
 //Cuadro negro pequeño que hace scroll
 const songs = document.createElement("div")
 songs.classList.add("songs")
+songs.id = "songs"
 contenedorLista.appendChild(songs)
 
 async function getText(playlist) {
     let myObject = await fetch(playlist);
     lista = await myObject.json();
-
+    saveSongs()
     //lammar la funcion crearCanciones
     crearCanciones()
     //para que pase por cada uno de los elementos del objeto    
-    lista.playlist.forEach(element => {
-        // renderSong(element)
-    });
 }
 
 function crearCanciones() {
+    loadSongs()
     for (let i = 0; i < lista.playlist.length; i++) {
+        console.log("liked",lista.playlist[i].liked);
         let plantillaCancion = new Cancion(
-            lista.playlist[i].imagen, lista.playlist[i].titulo, lista.playlist[i].artista, lista.playlist[i].album, lista.playlist[i].año, lista.playlist[i].duracion, lista.playlist[i].letra, lista.playlist[i].heart, lista.playlist[i].liked, lista.playlist[i].id
+            lista.playlist[i].imagen, lista.playlist[i].titulo, lista.playlist[i].artista, lista.playlist[i].album, lista.playlist[i].año, lista.playlist[i].duracion, lista.playlist[i].letra, lista.playlist[i].liked, lista.playlist[i].id
         )
         console.log(plantillaCancion);
         plantillaCancion.render(songs)
     }
 }
 
+function saveSongs() {
+    let json = JSON.stringify(lista);
+    localStorage.setItem("canciones", json);
+}
+
+function loadSongs() {
+    let loadedSongs = localStorage.getItem("canciones");
+    if (loadedSongs !== null) {
+        lista = JSON.parse(loadedSongs);
+    };
+    console.log("load songs:", lista);
+}
 
 getText(playlist)
-
-
-

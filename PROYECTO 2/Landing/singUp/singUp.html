@@ -55,14 +55,16 @@
               type="text"
               class="form__Input"
               placeholder="Enter your email"
+              id="email"
             />
           </div>
           <div class="form__Item">
             <div class="form__Title">Create a password</div>
             <input
-              type="text"
+              type="password"
               class="form__Input"
               placeholder="Create a password"
+              id="password"
             />
           </div>
           <div class="form__Item">
@@ -71,6 +73,7 @@
               type="text"
               class="form__Input"
               placeholder="Enter a profile name"
+              id="name"
             />
           </div>
           <div class="form__Info">This will appear on your profile</div>
@@ -79,15 +82,15 @@
             <div class="dateContainer">
               <div class="day">
                 Day
-                <input type="text" class="date__Input" placeholder="DD" />
+                <input type="text" class="date__Input" placeholder="DD" id="day"/>
               </div>
               <div class="month">
                 Month
-                <input type="text" class="date__Input" placeholder="MONTH" />
+                <input type="text" class="date__Input" placeholder="MONTH" id="month" />
               </div>
               <div class="year">
                 Year
-                <input type="text" class="date__Input" placeholder="YYYY" />
+                <input type="text" class="date__Input" placeholder="YYYY" id="year"/>
               </div>
             </div>
           </div>
@@ -95,34 +98,38 @@
             <div class="genderSelect__Title">What's your gender?</div>
             <div class="genderSelect__position">
               <div class="genderSelect__Option">
-                <input type="radio" class="" name="gender" />
+                <input type="radio" class="" name="gender" id="gender_male" />
                 <div>male</div>
               </div>
               <div class="genderSelect__Option">
-                <input type="radio" class="" name="gender" />
+                <input type="radio" class="" name="gender" id="gender_female" />
                 <div>female</div>
               </div>
               <div class="genderSelect__Option">
-                <input type="radio" class="" name="gender" />
+                <input type="radio" class="" name="gender" id="gender_other" />
                 <div>others</div>
               </div>
             </div>
           </div>
           <div class="checkbox">
             <div class="checkBox__position">
-              <input type="checkbox"/>
+              <input type="checkbox" id="recieveInfo"/>
               I don't want to recieve messages from Spotify
             </div>
             <div class="checkBox__position">
-              <input type="checkbox" />
+              <input type="checkbox" id="shareInfo"/>
               Share my registration date with Spotify content providers for
               marketing purpose
             </div>
           </div>
-          <button class="signUp"><a class="signUp__text" href="../../music/music.html">SIGN UP</a></button>
+          <button id="signUp" class="signUp">SIGN UP</button>
           <img src="./logo.png" alt="" class="logo" />
         </div>
     </section>
     </section>
   </body>
+  <footer>
+    <script type="module" src="./signUp.js"></script>
+    <script type="module" src="../../Utils/Utilsusuarios.js"></script>
+  </footer>
 </html>
