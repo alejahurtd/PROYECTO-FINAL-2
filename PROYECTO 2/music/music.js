@@ -113,21 +113,4 @@ function crearCanciones() {
 getText(playlist)
 
 
-function lyrics(id) {
-    let cancion = null
-    for (let i = 0; i < lista.playlist.length; i++) {
-        console.log(id)
-        console.log(lista.playlist[i].id)
-        if (id == lista.playlist[i].id) {
-            cancion = lista.playlist[i]
-        }
-    }
 
-    if (cancion == null) {
-        alert("no hay nadita")
-    } else {
-        window.location.href = './lyrics.html?id=' + cancion.id
-    }
-
-
-}
