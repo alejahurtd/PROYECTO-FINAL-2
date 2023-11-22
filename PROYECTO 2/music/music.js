@@ -46,6 +46,7 @@ searchAndUser.appendChild(searchIcon);
 const searchIconImg = document.createElement('img');
 searchIconImg.src = '../assets/icon search.png';
 searchIconImg.classList.add('searchAndUser__searchIcon--icon');
+searchIconImg.addEventListener("click", searchSong)
 searchIcon.appendChild(searchIconImg);
 
 const searchBarInput = document.createElement('input');
@@ -107,7 +108,7 @@ async function getText(playlist) {
 
 function crearCanciones() {
     for (let i = 0; i < lista.playlist.length; i++) {
-        console.log("liked",lista.playlist[i].liked);
+        console.log("liked", lista.playlist[i].liked);
         let plantillaCancion = new Cancion(
             lista.playlist[i].imagen, lista.playlist[i].titulo, lista.playlist[i].artista, lista.playlist[i].album, lista.playlist[i].año, lista.playlist[i].duracion, lista.playlist[i].letra, lista.playlist[i].liked, lista.playlist[i].id
         )
@@ -156,6 +157,23 @@ function findLoggedUser() {
             loggedUser = userList[index];
             return loggedUser;
         }
+    }
+}
+
+function searchSong() {
+    console.log("Search:", searchBarInput.value);
+    console.log(lista);
+    let id = null
+    for (let i = 0; i < lista.playlist.length; i++) {
+        if (lista.playlist[i].titulo.toLowerCase() == searchBarInput.value.toLowerCase()) {
+            id = lista.playlist[i].id
+        }
+    }
+    if (id == null) {
+        alert("No se encontro nada")
+    } else {
+        console.log(this.id);
+        window.location.href = './lyrics.html?id=' + id
     }
 }
 

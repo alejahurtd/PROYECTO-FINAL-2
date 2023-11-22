@@ -46,23 +46,34 @@ body {
 }
 
 .searchAndUser__userIcon {
+  display: flex;
   height: 50px;
-  padding-inline: 4.375rem;
+  padding-right: 4.375rem;
+  box-sizing: border-box;
 }
 
 .searchAndUser__searchContainer {
   display: flex;
   align-items: center;
+  
+}
+.searchAndUser__searchIcon--icon {
+  width: 20px;
+  display: flex;
+  
+  
 }
 /* esto es lo que le da el estilo al search */
 .searchAndUser__search {
   color: white;
   font-weight: bold;
-  font-size: 1.25rem;
-  width: 400px;
+  font-size: 1.3rem;
+  width: 300px;
   text-align: end;
   background-color: #ffffff00;
   border: none;
+  display: flex;
+  padding-right: 2rem;
 }
 
 .searchAndUser__search:focus {

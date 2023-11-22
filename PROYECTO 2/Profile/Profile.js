@@ -41,7 +41,7 @@ container.appendChild(headerProfile);
 //cerrar session
 const exit = document.createElement('div');
 exit.textContent = 'Exit';
-exit.classList.add('headerProfile__profileTitle');
+exit.classList.add('exit');
 headerProfile.appendChild(exit)
 exit.addEventListener("click", logout)
 

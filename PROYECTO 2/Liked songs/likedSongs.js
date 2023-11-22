@@ -39,17 +39,21 @@ const searchAndUser = document.createElement('section');
 searchAndUser.classList.add('searchAndUser');
 content.appendChild(searchAndUser);
 
-// Contenedor para el campo de búsqueda
-const searchContainer = document.createElement('div');
-searchContainer.classList.add('searchAndUser__searchContainer');
-searchAndUser.appendChild(searchContainer);
+const searchIcon = document.createElement('div');
+searchIcon.classList.add('searchAndUser__searchContainer');
+searchAndUser.appendChild(searchIcon);
 
-// Campo de búsqueda
-const searchInput = document.createElement('input');
-searchInput.classList.add('searchAndUser__search');
-searchInput.placeholder = 'Search';
-searchInput.type = 'text';
-searchContainer.appendChild(searchInput);
+const searchIconImg = document.createElement('img');
+searchIconImg.src = '../assets/icon search.png';
+searchIconImg.classList.add('searchAndUser__searchIcon--icon');
+searchIconImg.addEventListener("click", searchSong)
+searchIcon.appendChild(searchIconImg);
+
+const searchBarInput = document.createElement('input');
+searchBarInput.type = 'text';
+searchBarInput.placeholder = 'What do you want to listen?';
+searchBarInput.classList.add('searchAndUser__search');
+searchAndUser.appendChild(searchBarInput);
 
 // Enlace a la página de perfil con el icono del usuario
 const userProfileLink = document.createElement('a');
@@ -188,5 +192,22 @@ function updateHUD() {
     username.textContent = loggedUser.name;
 }
 updateHUD();
+
+function searchSong() {
+    console.log("Search:", searchBarInput.value);
+    console.log(lista);
+    let id = null
+    for (let i = 0; i < lista.playlist.length; i++) {
+        if (lista.playlist[i].titulo.toLowerCase() == searchBarInput.value.toLowerCase()) {
+            id = lista.playlist[i].id
+        }
+    }
+    if (id == null) {
+        alert("No se encontro nada")
+    } else {
+        console.log(this.id);
+        window.location.href = '../../music/lyrics.html?id=' + id
+    }
+}
 
 getText(playlist)
