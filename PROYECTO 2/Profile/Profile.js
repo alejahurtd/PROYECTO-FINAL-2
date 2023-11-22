@@ -38,6 +38,15 @@ const headerProfile = document.createElement('section');
 headerProfile.classList.add('headerProfile');
 container.appendChild(headerProfile);
 
+//cerrar session
+const exit = document.createElement('div');
+exit.textContent = 'Exit';
+exit.classList.add('headerProfile__profileTitle');
+headerProfile.appendChild(exit)
+exit.addEventListener("click", logout)
+
+
+
 // barra búsqueda
 const searchBarInput = document.createElement('input');
 searchBarInput.type = 'text';
@@ -107,6 +116,7 @@ content.appendChild(songsContainer);
 //estamos llamando como una constante nuestro JSON
 const playlist= "../Json/canciones.json"
 let lista
+let userList = [];
 
 async function getText(playlist){
     let myObject= await fetch(playlist);
@@ -190,12 +200,50 @@ function lyrics(id) {
     } else {
         window.location.href = '../music/lyrics.html?id=' + cancion.id
     }
-
-    
 }
 
+function logout() {
+    for (let index = 0; index < userList.length; index++) {
+        if (userList[index].isLogged == true) {
+            userList[index].isLogged = false;
+            saveUsers();
+            window.location.href = '../../Landing/Main page/mainpage.html'
+            //favoriteList = [];
+            //saveFavorites();
+        }
+    }
+}
 
+function loadUsers() {
+    let loadedUsers = localStorage.getItem("user");
+    if (loadedUsers !== null) {
+        userList = JSON.parse(loadedUsers);
+    };
+    console.log("load users:", userList);
+}
+loadUsers(); //primera carga de users
 
+function saveUsers() {
+    let json = JSON.stringify(userList);
+    localStorage.setItem("user", json);
+}
+
+function findLoggedUser() {
+    let loggedUser
+    for (let index = 0; index < userList.length; index++) {
+        if (userList[index].isLogged == true) {
+            loggedUser = userList[index];
+            return loggedUser;
+        }
+    }
+}
+
+function updateHUD() {
+    let loggedUser = findLoggedUser();
+    console.log(loggedUser);
+    username.textContent = loggedUser.name;
+}
+updateHUD();
 
 
 

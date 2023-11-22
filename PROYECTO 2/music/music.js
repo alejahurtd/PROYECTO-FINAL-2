@@ -69,6 +69,7 @@ import Cancion from "../Utils/Utilscanciones.js";
 //estamos llamando como una constante nuestro JSON
 const playlist = "../Json/canciones.json"
 let lista
+let userList = [];
 
 ////se colocan arriba para que cuando llamemos las funciones encuentre donde ubircalos
 //Cuadro negro grande que contine laista de canciones
@@ -89,16 +90,22 @@ songs.id = "songs"
 contenedorLista.appendChild(songs)
 
 async function getText(playlist) {
-    let myObject = await fetch(playlist);
-    lista = await myObject.json();
+    let loggedUser = findLoggedUser()
+    console.log("Logged User", loggedUser)
+    if (loggedUser.likedSongs == "") {
+        let myObject = await fetch(playlist);
+        lista = await myObject.json();
+    } else {
+        loadSongs()
+    }
     saveSongs()
     //lammar la funcion crearCanciones
     crearCanciones()
+    console.log(lista);
     //para que pase por cada uno de los elementos del objeto    
 }
 
 function crearCanciones() {
-    loadSongs()
     for (let i = 0; i < lista.playlist.length; i++) {
         console.log("liked",lista.playlist[i].liked);
         let plantillaCancion = new Cancion(
@@ -111,15 +118,45 @@ function crearCanciones() {
 
 function saveSongs() {
     let json = JSON.stringify(lista);
-    localStorage.setItem("canciones", json);
+    for (let index = 0; index < userList.length; index++) {
+        if (userList[index].isLogged == true) {
+            userList[index].likedSongs = json;
+        }
+    }
+    saveUsers()
 }
 
 function loadSongs() {
-    let loadedSongs = localStorage.getItem("canciones");
+    let loggedUser = findLoggedUser()
+    let loadedSongs = loggedUser.likedSongs;
     if (loadedSongs !== null) {
         lista = JSON.parse(loadedSongs);
     };
     console.log("load songs:", lista);
+}
+
+function loadUsers() {
+    let loadedUsers = localStorage.getItem("user");
+    if (loadedUsers !== null) {
+        userList = JSON.parse(loadedUsers);
+    };
+    console.log("load users:", userList);
+}
+loadUsers(); //primera carga de users
+
+function saveUsers() {
+    let json = JSON.stringify(userList);
+    localStorage.setItem("user", json);
+}
+
+function findLoggedUser() {
+    let loggedUser
+    for (let index = 0; index < userList.length; index++) {
+        if (userList[index].isLogged == true) {
+            loggedUser = userList[index];
+            return loggedUser;
+        }
+    }
 }
 
 getText(playlist)

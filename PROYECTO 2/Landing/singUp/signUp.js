@@ -19,7 +19,7 @@ function signUp() {
         return;
     } else {
         let nuevoUsuario = new Usuarios(
-            email.value, password.value, name.value, day.value, month.value, year.value, true, []
+            email.value, password.value, name.value, day.value, month.value, year.value, true, ""
         )
         userList.push(nuevoUsuario);
         saveUsers();

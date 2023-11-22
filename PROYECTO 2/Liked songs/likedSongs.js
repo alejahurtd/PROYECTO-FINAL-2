@@ -90,6 +90,7 @@ import Cancion from "../Utils/Utilscanciones.js";
 //estamos llamando como una constante nuestro JSON
 const playlist= "../Json/canciones.json"
 let lista
+let userList = [];
 
 ////se colocan arriba para que cuando llamemos las funciones encuentre donde ubircalos
 //Cuadro negro grande que contine laista de canciones
@@ -106,47 +107,86 @@ contenedorLista.appendChild(songTitle)
 //Cuadro negro pequeño que hace scroll
 const songs = document.createElement("div")
 songs.classList.add("songs")
+songs.id = "songs"
 contenedorLista.appendChild(songs)
 
 async function getText(playlist) {
-    let myObject = await fetch(playlist);
-    lista = await myObject.json();
-
+    let loggedUser = findLoggedUser()
+    console.log("Logged User", loggedUser)
+    if (loggedUser.likedSongs == "") {
+        let myObject = await fetch(playlist);
+        lista = await myObject.json();
+    } else {
+        loadSongs()
+    }
+    saveSongs()
     //lammar la funcion crearCanciones
     crearCanciones()
+    console.log(lista);
     //para que pase por cada uno de los elementos del objeto    
-    lista.playlist.forEach(element => {
-        // renderSong(element)
-    });
 }
 
 function crearCanciones() {
+    loadSongs()
     for (let i = 0; i < lista.playlist.length; i++) {
-        let plantillaCancion = new Cancion(
-            lista.playlist[i].imagen, lista.playlist[i].titulo, lista.playlist[i].artista, lista.playlist[i].album, lista.playlist[i].año, lista.playlist[i].duracion, lista.playlist[i].letra, lista.playlist[i].heart, lista.playlist[i].liked, lista.playlist[i].id
-        )
-        console.log(plantillaCancion);
-        plantillaCancion.render(songs)
-    }
-}
-
-getText(playlist)
-
-function lyrics(id) {
-    let cancion = null
-    for (let i = 0; i < lista.playlist.length; i++) {
-        console.log(id)
-        console.log(lista.playlist[i].id)
-        if (id == lista.playlist[i].id) {
-            cancion = lista.playlist[i]
+        if (lista.playlist[i].liked) {
+            let plantillaCancion = new Cancion(
+                lista.playlist[i].imagen, lista.playlist[i].titulo, lista.playlist[i].artista, lista.playlist[i].album, lista.playlist[i].año, lista.playlist[i].duracion, lista.playlist[i].letra, lista.playlist[i].liked, lista.playlist[i].id
+            )
+            console.log(plantillaCancion);
+            plantillaCancion.renderLiked(songs)
         }
     }
-
-    if (cancion == null) {
-        alert("no hay nadita")
-    } else {
-        window.location.href = '../music/lyrics.html?id=' + cancion.id
-    }
-
-    
 }
+
+function saveSongs() {
+    let json = JSON.stringify(lista);
+    for (let index = 0; index < userList.length; index++) {
+        if (userList[index].isLogged == true) {
+            userList[index].likedSongs = json;
+        }
+    }
+    saveUsers()
+}
+
+function loadSongs() {
+    let loggedUser = findLoggedUser()
+    let loadedSongs = loggedUser.likedSongs;
+    if (loadedSongs !== null) {
+        lista = JSON.parse(loadedSongs);
+    };
+    console.log("load songs:", lista);
+}
+
+function loadUsers() {
+    let loadedUsers = localStorage.getItem("user");
+    if (loadedUsers !== null) {
+        userList = JSON.parse(loadedUsers);
+    };
+    console.log("load users:", userList);
+}
+loadUsers(); //primera carga de users
+
+function saveUsers() {
+    let json = JSON.stringify(userList);
+    localStorage.setItem("user", json);
+}
+
+function findLoggedUser() {
+    let loggedUser
+    for (let index = 0; index < userList.length; index++) {
+        if (userList[index].isLogged == true) {
+            loggedUser = userList[index];
+            return loggedUser;
+        }
+    }
+}
+
+function updateHUD() {
+    let loggedUser = findLoggedUser();
+    console.log(loggedUser);
+    username.textContent = loggedUser.name;
+}
+updateHUD();
+
+getText(playlist)
