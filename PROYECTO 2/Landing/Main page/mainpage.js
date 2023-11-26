@@ -70,9 +70,6 @@ function renderCarrusel (element) {
   const imagenCarrusel =document.createElement ("img")
   imagenCarrusel.src= element.src
 
-  //agregamos la clase del tiempo carrusel 
-  imagenCarrusel.classList.add('carrusel__image--animated');
-
 // evento click para que los links del JSON CARRUSEL funcionen
 
 if(element.enlace){
@@ -116,12 +113,12 @@ cookiesLink.className = 'final__text';
 cookiesLink.href = '#';
 cookiesLink.textContent = 'Coockies';
 
-// inyectar
+// inyectar 
 leftDiv.appendChild(legalLink);
 leftDiv.appendChild(privacyPolicyLink);
 leftDiv.appendChild(cookiesLink);
 
-//  div de la derecha
+//  div  derecha
 const rightDiv = document.createElement('div');
 rightDiv.className = 'final__text--right';
 
@@ -143,10 +140,10 @@ rightDiv.appendChild(contactParagraph);
 rightDiv.appendChild(telParagraph);
 rightDiv.appendChild(mailParagraph);
 
-// Agregar los divs a la sección final
+// Agglos divs a la sección final
 finalSection.appendChild(leftDiv);
 finalSection.appendChild(rightDiv);
 
-// inyectar todo al body 
+// inyectar  al body 
 document.body.appendChild(finalSection);
 
