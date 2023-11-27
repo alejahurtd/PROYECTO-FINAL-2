@@ -48,11 +48,19 @@ exit.addEventListener("click", logout)
 
 
 // barra búsqueda
+
+const searchIconImg = document.createElement('img');
+searchIconImg.src = '../assets/icon search.png';
+searchIconImg.classList.add('searchAndUser__searchIcon--icon');
+searchIconImg.addEventListener("click", searchSong)
+headerProfile.appendChild(searchIconImg);
+
 const searchBarInput = document.createElement('input');
 searchBarInput.type = 'text';
-searchBarInput.classList.add('headerProfile__searchbar');
-searchBarInput.placeholder = 'Search';
+searchBarInput.placeholder = 'What do you want to listen?';
+searchBarInput.classList.add('searchAndUser__search');
 headerProfile.appendChild(searchBarInput);
+
 
 // Contenedor de información del perfil
 const userInfo = document.createElement('div');
@@ -108,98 +116,64 @@ OnlyVisibleToYou.textContent = 'Only visible to you';
 content.appendChild(OnlyVisibleToYou);
 
 //COMIENZA EL CONTENEDOR DE LAS CANCIONES
-const songsContainer = document.getElementById("contenedorLista");
-songsContainer.classList.add('songsContainer');
-content.appendChild(songsContainer);
+const songs = document.getElementById("songs");
+songs.classList.add('songsContainer');
+content.appendChild(songs);
 //-------//
 
 //estamos llamando como una constante nuestro JSON
+import Cancion from "../Utils/Utilscanciones.js";
 const playlist= "../Json/canciones.json"
 let lista
 let userList = [];
 
-async function getText(playlist){
-    let myObject= await fetch(playlist);
-    lista= await myObject.json();
-    
-//para que pase por cada uno de los elementos del objeto    
-    lista.playlist.forEach(element => {   
-        if(element.liked){
-            
-            renderSong(element)
-        }
-    });
-}
 //Cuadro negro grande que contine laista de canciones
-
-
-function renderSong (element) {
-    //lista de canciones
-    const song = document.createElement("div")
-    song.classList.add("song")
-    songsContainer.appendChild(song)
-
-    //contenedor de info canciones
-    const songContainer = document.createElement("div")
-    songContainer.classList.add("songContainer")
-    song.appendChild(songContainer)
-
-
-//imagen cancion
-    const image = document.createElement("img")
-    image.src = element.imagen
-    songContainer.appendChild(image)
-
-    const songText = document.createElement('div')
-    songText.classList.add("song__Text");
-    songContainer.appendChild(songText)
-
-    //titulo de la cancion
-    const songTitlee = document.createElement('div')
-    songTitlee.classList.add("song__Title");
-    songTitlee.innerText = element.titulo
-    songTitlee.addEventListener("click", function () { lyrics(element.id) })
-    songText.appendChild(songTitlee)
-
-    //cantante
-    const songSinger = document.createElement('div');
-    songSinger.classList.add("song__singer")
-    songSinger.innerText = element.artista
-    songText.appendChild(songSinger)
-
-// contenedor de favoritos y tiempo de duracion de la cancion
-    const songFavContainer = document.createElement('div')
-    songFavContainer.classList.add('songFav__Container')
-    song.appendChild(songFavContainer)
-
-    const favImg = document.createElement('img')
-    favImg.classList.add('song__Fav')
-    favImg.src = element.heart
-    songFavContainer.appendChild(favImg)
-
-    const time = document.createElement('div')
-    time.classList.add('song__Time')
-    time.innerText = element.duracion
-    songFavContainer.appendChild(time)
+async function getText(playlist) {
+    let loggedUser = findLoggedUser()
+    console.log("Logged User", loggedUser)
+    if (loggedUser.likedSongs == "") {
+        let myObject = await fetch(playlist);
+        lista = await myObject.json();
+    } else {
+        loadSongs()
+    }
+    saveSongs()
+    //lammar la funcion crearCanciones
+    crearCanciones()
+    console.log(lista);
+    //para que pase por cada uno de los elementos del objeto    
 }
 
-getText(playlist)
-
-function lyrics(id) {
-    let cancion = null
+function crearCanciones() {
+    loadSongs()
     for (let i = 0; i < lista.playlist.length; i++) {
-        console.log(id)
-        console.log(lista.playlist[i].id)
-        if (id == lista.playlist[i].id) {
-            cancion = lista.playlist[i]
+        if (lista.playlist[i].liked) {
+            let plantillaCancion = new Cancion(
+                lista.playlist[i].imagen, lista.playlist[i].titulo, lista.playlist[i].artista, lista.playlist[i].album, lista.playlist[i].año, lista.playlist[i].duracion, lista.playlist[i].letra, lista.playlist[i].liked, lista.playlist[i].id
+            )
+            console.log(plantillaCancion);
+            plantillaCancion.renderLiked(songs)
         }
     }
+}
 
-    if (cancion == null) {
-        alert("no hay nadita")
-    } else {
-        window.location.href = '../music/lyrics.html?id=' + cancion.id
+function saveSongs() {
+    let json = JSON.stringify(lista);
+    for (let index = 0; index < userList.length; index++) {
+        if (userList[index].isLogged == true) {
+            userList[index].likedSongs = json;
+        }
     }
+    saveUsers()
+}
+
+function loadSongs() {
+    let loggedUser = findLoggedUser()
+    let loadedSongs = loggedUser.likedSongs;
+    if (loadedSongs !== null) {
+        lista = JSON.parse(loadedSongs);
+    };
+    console.log("load songs:", lista);
 }
 
 function logout() {
@@ -207,7 +181,7 @@ function logout() {
         if (userList[index].isLogged == true) {
             userList[index].isLogged = false;
             saveUsers();
-            window.location.href = '../../Landing/Main page/mainpage.html'
+            window.location.href = '../Landing/Main page/mainpage.html'
             //favoriteList = [];
             //saveFavorites();
         }
@@ -243,7 +217,25 @@ function updateHUD() {
     console.log(loggedUser);
     username.textContent = loggedUser.name;
 }
+function searchSong() {
+    console.log("Search:", searchBarInput.value);
+    console.log(lista);
+    let id = null
+    for (let i = 0; i < lista.playlist.length; i++) {
+        if (lista.playlist[i].titulo.toLowerCase() == searchBarInput.value.toLowerCase()) {
+            id = lista.playlist[i].id
+        }
+    }
+    if (id == null) {
+        alert("No se encontro nada")
+    } else {
+        console.log(this.id);
+        window.location.href = '../music/lyrics.html?id=' + id
+    }
+}
+
 updateHUD();
+getText(playlist)
 
 
 

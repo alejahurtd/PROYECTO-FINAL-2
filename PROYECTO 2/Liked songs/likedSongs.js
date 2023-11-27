@@ -206,7 +206,7 @@ function searchSong() {
         alert("No se encontro nada")
     } else {
         console.log(this.id);
-        window.location.href = '../../music/lyrics.html?id=' + id
+        window.location.href = '../music/lyrics.html?id=' + id
     }
 }
 
