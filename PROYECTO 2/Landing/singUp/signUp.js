@@ -61,3 +61,17 @@ function validateEmail(email) {
         alert("You have entered an invalid email address")
     return true
 }
+
+//primera carga de users
+
+function findLoggedUser() {
+  let loggedUser
+  for (let index = 0; index < userList.length; index++) {
+      if (userList[index].isLogged == true) {
+          loggedUser = userList[index];
+          window.location.href = '../../music/music.html';
+      }
+  }
+}
+
+findLoggedUser()

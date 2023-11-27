@@ -147,3 +147,25 @@ finalSection.appendChild(rightDiv);
 // inyectar  al body 
 document.body.appendChild(finalSection);
 
+let userList = []
+
+function loadUsers() {
+  let loadedUsers = localStorage.getItem("user");
+  if (loadedUsers !== null) {
+      userList = JSON.parse(loadedUsers);
+  };
+  console.log("load users:", userList);
+}
+loadUsers(); //primera carga de users
+
+function findLoggedUser() {
+  let loggedUser
+  for (let index = 0; index < userList.length; index++) {
+      if (userList[index].isLogged == true) {
+          loggedUser = userList[index];
+          window.location.href = '../../music/music.html';
+      }
+  }
+}
+
+findLoggedUser()
