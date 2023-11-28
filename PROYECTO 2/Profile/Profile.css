@@ -63,21 +63,34 @@ body {
  
 
 }
-.headerProfile__searchbar {
-  background-color: #ffffff00;
-  border: none;
-  color: #fff;
+.searchAndUser__searchIcon--icon {
+  width: 20px;
+  display: flex;
+  padding-right: 2rem;
+  margin-top: -7rem;
+
+  
+}
+.searchAndUser__search {
+  color: white;
   font-weight: bold;
   font-size: 0.9375rem;
+  width: 100px;
+  text-align: end;
+  background-color: #ffffff00;
+  border: none;
   display: flex;
-  padding-bottom: 7.5rem;
-  margin-right: -8rem;
+  padding-right: 2rem;
+  margin-top: -7rem;
 }
 
-.headerProfile__searchbar:focus {
+.searchAndUser__search:focus {
   outline: none;
 }
 
+.searchAndUser__search::placeholder {
+  color: #fff;
+}
 .headerProfile__userInfo {
   display: flex;
   gap: 1.25rem;

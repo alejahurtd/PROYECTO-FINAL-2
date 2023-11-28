@@ -51,7 +51,7 @@ searchIcon.appendChild(searchIconImg);
 
 const searchBarInput = document.createElement('input');
 searchBarInput.type = 'text';
-searchBarInput.placeholder = 'What do you want to listen?';
+searchBarInput.placeholder = 'search';
 searchBarInput.classList.add('searchAndUser__search');
 searchAndUser.appendChild(searchBarInput);
 
