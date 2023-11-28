@@ -198,3 +198,18 @@ body {
   font-size: 0.93rem;
 }
 
+.song__Fav {
+  height: 35%;
+}
+
+.song__Fav--Container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5rem;
+}
+
+.song__Image {
+  width: 70px;
+}

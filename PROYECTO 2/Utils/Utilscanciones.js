@@ -191,28 +191,7 @@ export default class Cancion {
             }
         }
     }
-    //Generales
-    saveSongs(lista) {
-        let json = JSON.stringify(lista);
-        let userList = this.loadUsers()
-        for (let index = 0; index < userList.length; index++) {
-            if (userList[index].isLogged == true) {
-                userList[index].likedSongs = json;
-            }
-        }
-        this.saveUsers(userList)
-    }
-
-    loadSongs() {
-        let lista
-        let loggedUser = this.findLoggedUser()
-        let loadedSongs = loggedUser.likedSongs;
-        if (loadedSongs !== null) {
-            lista = JSON.parse(loadedSongs);
-        };
-        console.log("load songs:", lista);
-        return lista
-    }
+    // generales
 
     loadUsers() {
         let userList
