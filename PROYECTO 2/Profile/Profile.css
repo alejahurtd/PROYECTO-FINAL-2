@@ -213,3 +213,10 @@ body {
 .song__Image {
   width: 70px;
 }
+
+.searchAndUser__search{
+  text-decoration: none;
+  background-color: transparent;
+  border: none; 
+  outline: none;
+}
